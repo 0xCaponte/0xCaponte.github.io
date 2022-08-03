@@ -1,0 +1,72 @@
+<div class="bl-panel-items" id="bl-panel-work-items">
+    {%- for portfolio in site.portfolios -%}
+    <!-- Project Starts -->
+    <div data-panel="panel-{{ forloop.index }}">
+        <div class="row">
+
+            <div class="carousel carousel-slider center">
+
+                <!-- Project Main Content Starts -->
+                {%- for content in portfolio.content -%}
+                <a class="carousel-item" href="">
+                
+                    {%- if content.type == 'youtube' -%}
+                    <div id="video" class="videocontainer">
+                        <iframe class="youtube-video" src="{{ content.source }}"></iframe>
+                    </div>
+                    
+                    {%- elsif content.type == 'video' -%}
+                    <video id="video" class="responsive-video" controls="" onloadstart="this.volume=0" poster="{{ content.image | relative_url }}">
+                        <source src="{{ content.source }}" type="video/mp4">
+                    </video>
+                
+                    {%- else -%}
+                    <img class="responsive-img" src="{{ content.source | relative_url }}" alt="project" /> {%- endif -%}
+                
+                </a> {%- endfor -%}
+
+            </div>
+            <!-- Main Project Content Ends -->
+
+            <!-- Project Details Starts -->
+            <div class="col s12 l6 xl6 section-padding">
+                <h3 class="font-weight-700 uppercase">{{ portfolio.title }}</h3>
+                <ul class="project-details second-font">
+                    <li><i class="fa fa-user"></i><span class="font-weight-400">{{ portfolio.client }}</span></li>
+                    <li><i class="fa fa-calendar-o"></i><span class="font-weight-400">{{ portfolio.date }}</span></li>
+                    <li><i class="fa fa-cogs"></i> <span class="font-weight-700"> Stack </span> : <span class="font-weight-400">{{ portfolio.technologies }}</span></li>
+                    <li><i class="fa fa-map-o"></i> <span class="font-weight-400 ">{{ portfolio.description }}</span>
+                    </li>
+                </ul>
+                <hr>
+
+                <!-- More Info Starts -->
+                {% if portfolio.more-info-url %}
+                <a href="{{ portfolio.more-info-url }}" target="_blank" class="waves-effect waves-light btn font-weight-700">More Info<i
+                        class="fa fa-external-link"></i>
+                </a> {% endif %}
+                <!-- More Info Ends -->
+
+            </div>
+            <!-- Project Details Ends -->
+        </div>
+    </div>
+    <!-- Project Ends -->
+    {%- endfor -%}
+
+    <!-- Portfolio Navigation Starts -->
+    <nav>
+        <!-- Previous Work Icon Starts -->
+        <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
+        <!-- Previous Work Icon Ends -->
+
+        <!-- Close Work Icon Starts -->
+        <img alt="close" src="{{ '/resources/images/close-button.png' | relative_url }}" class="control-button bl-icon-close" />
+        <!-- Close Work Icon Ends -->
+
+        <!-- Next Work Icon Starts -->
+        <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
+        <!-- Previous Work Icon Ends -->
+    </nav>
+    <!-- Portfolio Navigation Ends -->
+</div>

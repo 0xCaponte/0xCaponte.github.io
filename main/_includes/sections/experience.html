@@ -1,0 +1,25 @@
+<div class="resume-card resume-card-0 is-active" id="resume-card-0" data-index="0">
+    <!-- Experience Header Title Starts -->
+    <div class="resume-card-header">
+        <div class="resume-card-name"><i class="fa fa-briefcase"></i> {{site.experience-title }}</div>
+    </div>
+    <!-- Experience Header Title Ends -->
+    <!-- Experience Content Starts -->
+    <div class="resume-card-body experience">
+        <div class="resume-card-body-container second-font">
+            {%- for experience in site.experience -%}
+            <!-- Single Experience Starts -->
+            <div class="resume-content">
+                <h6 class="uppercase"><span>{{experience.title}}</span></h6>
+                <h6>{{experience.company}}</h6>
+                <span class="date"><i class="fa fa-calendar-o"></i>{{experience.date}}</span>
+                <p>{{experience.description}}</p>
+            </div>
+
+            <!-- Single Experience Ends -->
+            {%- if forloop.last != true -%}
+            <span class="separator"></span> {%- endif -%} {%- endfor -%}
+        </div>
+    </div>
+    <!-- Experience Content Starts -->
+</div>

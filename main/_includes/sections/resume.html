@@ -1,0 +1,61 @@
+<div class="resume-container">
+    <div class="container">
+        <div class="row">
+            <!-- Resume Menu Starts -->
+            <div class="resume-list col s12 m12 l4 section-padding">
+                <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
+                    <div class="resume-list-item-inner">
+                        <h6 class="resume-list-item-title uppercase">
+                            <i class="fa fa-briefcase"></i>
+                            <span class="resume-list-item-title-text">{{site.experience-title }}</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="resume-list-item" data-index="1" id="resume-list-item-1">
+                    <div class="resume-list-item-inner">
+                        <h6 class="resume-list-item-title uppercase">
+                            <i class="fa fa-graduation-cap"></i>
+                            <span class="resume-list-item-title-text">{{site.education-title }}</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="resume-list-item" data-index="2" id="resume-list-item-2">
+                    <div class="resume-list-item-inner">
+                        <h6 class="resume-list-item-title uppercase">
+                            <i class="fa fa-bolt"></i>
+                            <span class="resume-list-item-title-text">{{site.skills-title }}</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="resume-list-item" data-index="3" id="resume-list-item-3">
+                    <div class="resume-list-item-inner">
+                        <h6 class="resume-list-item-title uppercase">
+                            <i class="fa fa-superpowers"></i>
+                            <span class="resume-list-item-title-text">{{site.interests-title }}</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume Menu Ends -->
+
+            <!-- Resume Content Starts -->
+            <div class="col s12 m12 l8 xl8 section-padding">
+                <!-- Experience Starts -->
+                {%- include sections/experience.html -%}
+                <!-- Experience Ends -->
+                <!-- Education Starts -->
+                {%- include sections/education.html -%}
+                <!-- Education Ends -->
+                <!-- Skills Starts -->
+                {%- include sections/skills.html -%}
+                <!-- Skills Ends -->
+                <!-- Interests Starts -->
+                {%- include sections/interests.html -%}
+                <!-- Interests Ends -->
+            </div>
+
+            <!-- Resume Content Ends -->
+        </div>
+    </div>
+</div>

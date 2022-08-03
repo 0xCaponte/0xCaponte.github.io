@@ -1,0 +1,79 @@
+<div class="sidebar col s12 m4 l4 xl4">
+    <div class="row">
+        {%- if page.tags -%}
+            <div class="col s6 m6 l6 xl6">
+                <a href="{{'/blog'| relative_url }}" class="btn back"><i class="fa fa-arrow-left"></i> Blog</a>
+            </div>
+            <div class="col s6 m6 l6 xl6">
+                <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> Home</a>
+            </div>
+            {% else %}
+            <div class="col s12 m12 l12 xl12">
+                <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> home</a>
+            </div>
+        {%- endif -%}
+        
+    </div>
+    
+    {%- if page.postSearch -%}
+    <!-- Search Widget Starts -->
+    <div class="widget widget-search">
+        <div>
+            <input type="text" id="search-input" placeholder="Search in my blog ...">
+        </div>
+        <ul id="results-container"></ul>
+    </div>
+    <!-- Search Widget Ends -->
+    {%- endif -%}
+
+    <!-- Latest Posts Widget Ends -->
+    <div class="widget recent-posts">
+        <h3 class="widget-title">Recent Posts</h3>
+        <ul class="unstyled clearfix">
+            {%- for post in site.posts limit:5 -%}
+            <!-- Recent Post Widget Starts -->
+            <li>
+                <div class="posts-thumb pull-left"> 
+                    <a href="{{ post.url }}">
+                        <img alt="img" src="{{post.image | absolute_url }}">
+                    </a>
+                </div>
+                <div class="post-info">
+                    <h4 class="entry-title">
+                        <a href="{{ post.url }}">{{ post.title | truncate: 55 "" }}</a>
+                    </h4>
+                    <p class="post-meta second-font">
+                        <span class="post-date"> {{page.date | date_to_string}}</span>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <!-- Recent Post Widget Ends -->
+            {%- endfor -%}
+        </ul>
+    </div>
+    <!-- Latest Posts Widget Ends -->
+    <!-- as you wish -->
+    <!-- Categories Widget Starts -->    
+    <div class="widget">
+        <h3 class="widget-title">Categories</h3>
+        <ul class="arrow nav nav-tabs second-font uppercase">
+            {%- for category in site.categories -%}
+            <li><a href="/blog/categories/{{ category | first | slugify }}">{{category | first }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    
+    <!-- Categories Widget Ends -->
+    
+    <!-- Tags Widget Starts -->
+    <div class="widget widget-tags">
+        <h3 class="widget-title">Popular Tags </h3>
+        <ul class="unstyled clearfix">
+            {%- for tag in site.tags -%}
+            <li><a href="/blog/tags/{{ tag[0] | slugify }}">{{ tag | first }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <!-- Tags Widget Ends -->
+</div>

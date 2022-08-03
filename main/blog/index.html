@@ -1,0 +1,72 @@
+---
+layout: default
+pageClass: blog
+title: Blog | Moscow - Personal Portfolio
+---
+
+
+<div class="container page-title center-align">
+	<h2 class="center-align">
+		<span>My </span>
+		<span>blog</span>
+	</h2>
+</div>
+<!-- Divider Starts -->
+<div class="divider center-align">
+	<span class="outer-line"></span>
+	<span class="fa fa-vcard" aria-hidden="true"></span>
+	<span class="outer-line"></span>
+</div>
+<!-- Divider Ends -->
+
+<div class="container">
+	<div class="row">
+		<div class="content col s12 m8 l8 xl8">
+			{%- for post in paginator.posts -%}
+				<!-- Article Starts -->
+			<article>
+				<a href="{{post.url}}"><h4>{{post.title}}</h4></a>
+				<!-- Figure Starts -->
+				<figure class="blog-figure">
+					<a href="{{post.url}}">
+						<img class="responsive-img" src="{{post.image | absolute_url }}" alt="{{post.title}} post">
+					</a>
+				</figure>
+				<!-- Figure Ends -->
+				<!-- Excerpt Starts -->
+				<div class="blog-excerpt">
+					<p class="second-font">{{post.summary}}</p>
+					<a href="{{post.url}}" class="col s12 m4 l4 xl4 waves-effect waves-light btn readmore font-weight-700">
+						Read more 
+					</a>
+					<!-- Meta Starts -->
+					<div class="meta second-font">
+						<span><i class="fa fa-user"></i> <a href="#">{{post.author}}</a></span>
+						<span class="date"><i class="fa fa-calendar"></i> {{page.date | date_to_string}}</span>
+						<span>
+							<i class="fa fa-tags"></i> 
+						{%- for item in page.tags -%}
+							{{ item }}
+							{%- if forloop.last  == false -%},{%- endif -%}
+						{%- endfor -%}
+						</span>
+						<span class="permalink">
+							<i class="fa fa-link"></i> 
+							<a href="{{post.url}}">permalink</a>
+						</span>
+					</div>
+					<!-- Meta Ends -->
+				</div>
+				<!-- Excerpt Ends -->
+			</article>
+			<!-- Article Ends -->
+			{%- endfor -%}
+			
+			{%- include pagination.html -%}
+		</div>
+		<!-- Sidebar Starts -->
+		{%- include sidebar.html -%}
+		<!-- Sidebar Ends -->
+	</div>
+</div>
+

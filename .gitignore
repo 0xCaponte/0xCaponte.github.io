@@ -1,0 +1,5 @@
+./main/_site/
+./main/.sass-cache/
+./main/.jekyll-cache/
+./main/.jekyll-metadata
+./main/node_modules/

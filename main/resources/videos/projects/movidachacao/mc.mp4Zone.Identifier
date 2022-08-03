@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://express.adobe.com/
+HostUrl=https://ccv-render-assets-prod.s3-accelerate.amazonaws.com/ArcmbAIDKDk/OUTPUT/preset.json/mc_video_AdobeExpress.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220731T214852Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAVTZ77R5PYKRFM5P5%2F20220731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=753d9ba9b9b248e70bebc2b768b46915fa7e9d2a537ac71f2d504520661b68d1

@@ -1,0 +1,415 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Carlos Aponte
+email: 
+
+# This description will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
+description: >- # this (>-) means to ignore newlines until "baseurl:"
+  "Carlos Aponte - Developer and Cybersecurity Enthusiast."
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://caponte.io # the base hostname & protocol for your site, e.g. http://example.com
+
+encoding: UTF-8
+
+# jekyll paginate
+# Outputting
+permalink: /blog/:categories/:title/
+paginate: 3 # amount of posts to show
+paginate_path: /blog/page:num/
+timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+sort_field: "date"
+sort_reverse: true
+
+#plugin
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: jekyll-archives
+  path: /blog/categories/
+
+tag_archive:
+  type: jekyll-archives
+  path: /blog/tags/
+# https://github.com/jekyll/jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+    year: year-archive
+  permalinks:
+    category: /blog/categories/:name/
+    tag: /blog/tags/:name/
+    year: /blog/archives/year/:year/
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+  envs: development
+
+# dont change this line
+#https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      pageClass: blog
+      postSearch: true
+
+#version
+version: dark
+
+# favicon
+favicon: /resources/images/favicon.ico
+
+# Disqus is a global comment system
+# disqus_shortname: moscow-jekyll-theme #https://disqus.com/
+
+#analytics
+google_analytics: #https://analytics.google.com/
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - bin/
+  - docs/
+  - gulpfile.js
+  - package-lock.json
+  - package.json
+
+#########################################################################################
+############################ template content/sections ######################################
+#########################################################################################
+
+#home
+topleft:
+  wellcome: "I'm"
+  my-name: "Carlos Aponte"
+  description: '<b class="is-visible">Developer</b> <b>Cybersecurity Enthusiast</b>'
+#about
+about:
+  section-title: "About"
+  section-tagline: "Me"
+  description:
+    "I am a resourceful developer specially interested in the improvement of peoples'
+    everyday lives through technological innovation and passionate about cybersecurity,
+    the outdoors, language learning, getting to know new people, cultures and places."
+  name: Carlos Aponte
+  freelance: Available
+  address: "Hamburg, Germany"
+  email: capontetoro@gmail.com
+  mother-tongue: Spanish
+  other-langages: English - German - Portuguese
+
+  #download cv link
+  cv-download-text: "Download CV"
+  cv-download-link: "#"
+
+  # Boxes Starts - Footer Icons and Links
+  boxesStarts:
+    - description: "GitHub"
+      icon: fa fa-github
+      link: https://github.com/ur3k
+
+    - description: "LinkedIn"
+      icon: fa fa-linkedin
+      link: https://www.linkedin.com/in/capontetoro/
+
+    - description: "Stack Overflow"
+      icon: fa fa-stack-overflow
+      link: https://stackoverflow.com/users/1270603
+
+    - description: "Twitter"
+      icon: fa fa-twitter
+      link: https://twitter.com/
+
+#+
+experience-title: Experience
+#+
+education-title: Education
+#+
+skills-title: Tools & Skills
+#+
+interests-title: Interests
+
+#  EXPERIENCE & EDUCATION & skill
+experience:
+  - date: "10/2019 - Today"
+    title: "Senior IT Consultant and Developer"
+    company: "Trivelope GmbH (DE)"
+    description: Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit
+
+  - date: "08/2018 - 09/2019"
+    title: "IT Consultant and Developer"
+    company: "Senacor Technologies AG (DE)"
+    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+
+  - date: "04/2015 - 02/2017"
+    title: "Senior Developer for mobile Apps and Assistent PM"
+    company: "IT Security Solutions (VE)"
+    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+
+  - date: "03/2016 - 02/0217"
+    title: "Freelance iOS and Backend Developer"
+    company: "Kiwi Applications LLV - ComeWith Inc"
+    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+
+  - date: "01/2011 - 03/2015"
+    title: "SysAdmin and Teacher's Assistant"
+    company: "Simon Bolivar university (VE)"
+    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+
+education:
+  - date: 09/2017 - 03/2019
+    title: "International Master in Project Management"
+    institution: "MIP Politecnico di Milano (IT) – Strathclyde Business School (GB)"
+    thesis: "Integration of Agile Methodologies in a Waterfall Enviroment"
+    extras: "Cum Laude"
+
+  - date: 09/2019 - 10/2015
+    title: "Bachelor's degree in computer engineering"
+    institution: "Simon Bolivar University (VE) - Exchange at University of Siegen (DE)"
+    thesis: "Dynamic Password (OTP) Generator and its iOS Implementation"
+    extras: "Electives: IT-Security, Cryptography, Computer Networks & Linear Programming"
+
+skills:
+  - name: Java
+  - name: Python
+  - name: Spring Boot
+  - name: Hibernate
+  - name: SQL
+  - name: Git
+  - name: AWS
+  - name: MS Suite
+  - name: Jekyll
+  - name: Jenkins
+  - name: Microservices
+  - name: Agile Project Management
+  - name: Software Architecture
+
+interests:
+  - description: Traveling the world and geting to know new people, cultures and places
+  - description: Learning lenguages by reading, movies, series, meetups and tandems
+  - description: Fitness, dancing, baseball, surf, yoga, trekking, boxing
+  - description: Chess and strategy games
+
+# portfolio
+portfolios:
+  - title: Pago Móvil (p2p)
+    technologies: iOS, Swift, Objective-C, X-Code, OpenSSL
+    client: IT Security Solutions C.A.
+    date: 2015 - 2017
+    preview-image: /resources/images/projects/pagomovil/preview.png
+    content:
+      - type: "video"
+        source: /resources/videos/projects/pagomovil/p2p.mp4
+
+    description: >-
+      iOS App for the interbank mobile payment system (P2P) of two major banks in Venezuela, 
+      each with an estimated usage of 100.000+ monthly transactions. Internal use of OTPs to secure
+      each interaction.
+
+  - title: Okappi
+    technologies: iOS, Swift, AWS Lambda, AWS API Gateway, AWS DynamoDB
+    client: ComeWith Inc
+    date: 2016 - 2017
+    preview-image: /resources/images/projects/okappi/preview.png
+    more-info-url: https://www.alanherman.me/#/okappi-app/
+    description: >-
+      Okappi was a social network focused on creating small, private and thoughtfully curated communities. 
+      The app empowered the users to look for their own people and interests, create groups, plan events 
+      and participate in meaningful discussions.
+    content:
+      - type: "video"
+        source: /resources/videos/projects/okappi/flow.mp4
+
+  - title: Labor Alerts
+    technologies: iOS, PHP, Swift, X-Code
+    client: Kiwi LLC
+    date: 2016 - 2017
+    preview-image: /resources/images/projects/laboralerts/preview.png
+    more-info-url: http://laboralerts.com/
+    description: >-
+      The LaborAlerts app helped users search for and be alerted when US companies nationwide performed or 
+      announced layoffs. The searches and notifications could be tailored to whole regions, states, counties, 
+      cities, or companies. Furthermore, the app also offered historical data of more than a decade of 
+      layoffs, together with both graphical and table representations of this data.
+    content:
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la1.png
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la2.png 
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la3.png    
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la4.png
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la5.png
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la6.png
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la7.png
+      - type: "image"
+        source: /resources/images/projects/laboralerts/la8.png
+
+
+  - title: Movida Chacao
+    technologies: Android, Android Studio, Java, Wikitude
+    client: Reto Chacao - App Challenge
+    date: 2015
+    preview-image: /resources/images/projects/movidachacao/preview.png
+    more-info-url: https://github.com/ur3k/MovidaChacao
+    description: >-
+      Movida Chacao was a virtual guide for cultural and sport related events and places of interest. It was created for the 
+      Reto Chacao - App Challenge of 2015 with aims of helping with the modernization and digitalization efforts of the municipality.
+      The app allowed people to get informed, interact and participate in all activities happening in this municipality. 
+      The app offered a complete and curated overview of the activities by means of a classical social feed, a map to locate the activities 
+      and a VR function to see what event was happening at a given time on a specific place or direction.
+    content:
+      - type: "video"
+        source: /resources/videos/projects/movidachacao/mc.mp4
+
+  - title: SAMF OTP Generator
+    technologies: iOS, C, Objective-C, OpenSSL, Valgrind
+    client: IT Security Solutions C.A.
+    date: 2015
+    preview-image: /resources/images/projects/samf/preview.png
+    description: >-
+      The development encompassed the server's core functionality as well as the iOS app of a 2nd factor authentication solution. The solution 
+      was based on the generation and validation of OTPs; it used synchronization time windows, time steps and interrelated generation seeds.
+    content:
+      - type: "video"
+        source: /resources/videos/projects/samf/samf.mp4
+
+  - title: Nagios Alert
+    technologies: Android, Java, Nagios
+    client: Simon Bolivar University
+    date: 2015
+    preview-image: /resources/images/projects/nagiosAlert/preview.png
+    more-info-url: https://github.com/ur3k/NagiosAlert
+    description: >-
+      An Android application and its backend servlet developed as a class project at 
+      Simon Bolivar University (VE). This app allowed you to monitor the status of the 
+      clients of your Nagios server and their services by reading the status.dat file of
+      the server.
+    content:
+      - type: "image"
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-1.png
+      - type: "image"
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-2.png
+      - type: "image"
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-3.png
+      - type: "image"
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-4.png
+      - type: "image"
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-5.png
+
+
+
+#contact page
+# contract:
+#  page-title: '<span data-hover="get">get </span><span data-hover="in touch">in touch</span>>'
+#  info: "Feel free to drop me a line"
+#  description: "If you have any suggestion, project or even you want to say Hello... Please fill out the form below and I will reply you shortly."
+
+#+ socials
+socials:
+  phone:
+    name: Phone
+    icon: "fa fa-phone"
+    value: "+34 62 11 84 01"
+  email:
+    name: Email
+    icon: "fa fa-envelope"
+    value: " you@youwebsite.com"
+  skype:
+    name: Skype
+    icon: "fa fa-skype"
+    value: "linda.smith"
+  address:
+    name: Address
+    icon: "fa fa-home"
+    value: "Moscow, Russia"
+  facebook:
+    name: Facebook
+    icon: "fa fa-facebook"
+    value: "#"
+    class: "facebook"
+  twitter:
+    name: Twitter
+    icon: "fa fa-twitter"
+    value: "#"
+    class: "twitter"
+  google:
+    name: Google
+    icon: "fa fa-google-plus"
+    value: "#"
+    class: "google-plus"
+  linkedin:
+    name: linkedin
+    icon: "fa fa-linkedin"
+    value: "#"
+    class: "linkedin"
+    
+# https://usebasin.com/f/ae5cdb663a3f{site.form_id}
+# form_id: ae5cdb663a3f

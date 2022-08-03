@@ -1,0 +1,23 @@
+<div class="resume-card resume-card-2" id="resume-card-2" data-index="2">
+    <!-- Skills Header Title Starts -->
+    <div class="resume-card-header">
+        <div class="resume-card-name"><i class="fa fa-bolt"></i> {{site.skills-title }}</div>
+    </div>
+    <!-- Skills Header Title Starts -->
+    <div class="resume-card-body skills">
+        <div class="resume-card-body-container second-font">
+            <div class="row" id="skills-counter">
+                {%- for skill in site.skills -%}
+                <div class="col ws-2">
+                    <!-- Single Skills Starts -->
+                    <div class="resume-content">
+                        <h6>{{skill.name}}</h6>
+                        <br>
+                    </div>
+                    <!-- Single Skills Ends -->
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>

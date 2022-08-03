@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%- include head.html -%}
+
+<body class="{{page.pageClass}} {{ site.version }}">
+  <!-- Preloader Start -->
+  {%- include preloader.html -%}
+  <!-- Preloader Ends -->
+  
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+    {{ content }}
+    </div>
+    <!-- Wrapper end -->
+  {%- include scripts.html -%}
+</body>
+
+</html>

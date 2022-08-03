@@ -1,0 +1,20 @@
+<div class="resume-card resume-card-3" id="resume-card-3" data-index="3">
+    <!-- Interests Header Title Starts -->
+    <div class="resume-card-header">
+        <div class="resume-card-name"><i class="fa fa-superpowers"></i> {{site.interests-title }}</div>
+    </div>
+    <!-- Interests Header Title Starts -->
+    <div class="resume-card-body interests">
+        <div class="resume-card-body-container second-font">
+            {%- for interest in site.interests -%}
+            <!-- Single Interest start -->
+            <div class="resume-content">
+                <h6>{{interest.description}}</h6>
+                <br>
+            </div>
+            <!-- Single Interest Ends -->
+            {%- if forloop.last != true -%}
+            <span class="separator"></span> {%- endif -%} {%- endfor -%}
+        </div>
+    </div>
+</div>

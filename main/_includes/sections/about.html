@@ -1,0 +1,120 @@
+<section>
+    <!-- About Title Starts -->
+    <div class="bl-box valign-wrapper">
+        <div class="page-title center-align">
+            <h2 class="center-align">
+                <span data-hover="{{ site.about.section-title }}">{{ site.about.section-title }}
+                </span>
+                <span data-hover="{{ site.about.section-tagline }}">{{ site.about.section-tagline }}</span>
+            </h2>
+        </div>
+    </div>
+    <!-- About Title Ends -->
+    <!-- About Expanded Starts -->
+    <div class="bl-content">
+        <!-- Main Heading Starts -->
+        <div class="container page-title custom-page-title">
+            <h2 class="center-align">
+                <span>{{ site.about.section-title }}</span>
+                <span>{{ site.about.section-tagline }}</span>
+            </h2>
+        </div>
+        <!-- Main Heading Ends -->
+        <div class="container infos">
+            <!-- Divider Starts -->
+            <div class="divider center-align">
+                <span class="outer-line"></span>
+                <span class="fa fa-vcard" aria-hidden="true"></span>
+                <span class="outer-line"></span>
+            </div>
+            <!-- Divider Ends -->
+            <!-- Personal Informations Starts -->
+            <div class="row">
+                <!-- Picture Starts -->
+                <div class="profile-picture show-on-medium-and-down center-align">
+                    <img src="/resources/images/profile.png" class="responsive-img my-picture" alt="My Photo" />
+                </div>
+                <!-- Picture Ends -->
+                <div class="col s12 m12 l12 xl12 personal-info section-padding">
+                    <div class="row s12 m12 l12 xl12 center-align p-none">
+                        <p class="col second-font">{{ site.about.description }}</p>
+                    </div>
+                    <div>
+                        <div class="row s12 m12 l12 xl12 p-none">
+                            <div class="col s12 m12 l6 xl6 center-align p-none">
+                                <ul class="second-font list-1">
+                                    <li>
+                                        <span class="font-weight-700">Name: </span>{{ site.about.name }}
+                                    </li>
+                                    <li>
+                                        <span class="font-weight-700">Location: </span>{{ site.about.address }}
+                                    </li>
+                                    <li>
+                                        <span class="font-weight-700">Mother Tongue: </span>{{ site.about.mother-tongue }}
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col s12 m12 l6 xl6 center-align p-none">
+                                <ul class="second-font list-2">
+                                    <li>
+                                        <span class="font-weight-700">Email: </span>{{ site.about.email }}
+                                    </li>
+                                    <li>
+                                        <span class="font-weight-700">Freelance: </span>{{ site.about.freelance }}
+                                    </li>
+                                    <li>
+                                        <span class="font-weight-700">I also speaks: </span>{{ site.about.other-langages }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row s12 m12 l12 xl12 p-none ">
+                        <div class="col s12 m6 l6 xl6 justified-center">
+                            <a href="{{site.about.cv-download-link}}" class="btn font-weight-700">
+                                {{ site.about.cv-download-text}} <i class="fa fa-file-pdf-o"></i>
+                            </a>
+                        </div>
+                        <div class="col s12 m6 l6 xl6 justified-center">
+                            <a href="{{ 'blog' | relative_url }}" class="btn font-weight-700">
+                                My Blog <i class="fa fa-edit"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Personal Informations Ends -->
+        </div>
+        <!-- Resume Starts -->
+        {%- include sections/resume.html -%}
+        <!-- Resume Ends -->
+
+
+        <!-- Fun Facts Starts -->
+        <div class="container badges">
+            <div class="row justified">
+                {%- for item in site.about.boxesStarts -%}
+                <!-- Fact Badge Item Starts -->
+                <div class="col s12 m4 l4 center-align">
+
+                    <a href="{{item.link}}" target="_blank">
+                        <h3><i href="{{item.link}}" class="{{item.icon}}"></i></h3>
+                    </a>
+
+                    <a href="{{item.link}}" target="_blank" class="font-weight-700">
+                        <h6>
+                            {{item.description}}
+                        </h6>
+                    </a>
+                </div>
+                <!-- Fact Badge Item Ends -->
+                {%- endfor -%}
+            </div>
+        </div>
+        <!-- Fun Facts Ends -->
+    </div>
+    <!-- End Expanded About -->
+
+    <img alt="close" src="{{'/resources/images/close-button.png' |relative_url}}" class="bl-icon-close" />
+</section>

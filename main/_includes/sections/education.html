@@ -1,0 +1,22 @@
+<div class="resume-card resume-card-1" id="resume-card-1" data-index="1">
+    <!-- Education Header Title Starts -->
+    <div class="resume-card-header">
+        <div class="resume-card-name"><i class="fa fa-graduation-cap"></i> {{site.education-title }}</div>
+    </div>
+    <!-- Education Header Title Starts -->
+    <div class="resume-card-body education">
+        <div class="resume-card-body-container second-font">
+            {%- for education in site.education -%}
+            <!-- Single Education Starts -->
+            <div class="resume-content">
+                <h6 class="uppercase"><span>{{education.title}}</span></h6>
+                <h6>{{education.institution}}</h6>
+                <span class="date"><i class="fa fa-calendar-o"></i>{{education.date}}</span>
+                <p>- Thesis: {{education.thesis}} <br>- {{education.extras}}</p>
+            </div>
+            <!-- Single Education Ends -->
+            {%- if forloop.last != true -%}
+            <span class="separator"></span> {%- endif -%} {%- endfor -%}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+gem install jekyll 
+gem install bunler
+
+sudo apt-get install nodejs
+npm i
