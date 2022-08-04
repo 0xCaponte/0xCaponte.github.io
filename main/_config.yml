@@ -18,13 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Build for production
+# Execute the following command:
+#     JEKYLL_ENV=production jekyll serve          
+#  
+environment: production
+
 title: Carlos Aponte
 email: 
 
 # This description will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 description: >- # this (>-) means to ignore newlines until "baseurl:"
-  "Carlos Aponte - Developer and Cybersecurity Enthusiast."
+  Carlos Aponte - Developer and Cybersecurity Enthusiast.
 
 
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -82,9 +88,11 @@ jekyll-archives:
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
+  blanklines: true
+  comments: ["<!-- ", " -->"]
   endings: all
   ignore:
-    envs: development
+    envs: [development]
 
 # dont change this line
 #https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -105,13 +113,13 @@ defaults:
 version: dark
 
 # favicon
-favicon: /resources/images/favicon.ico
+favicon: /resources/images/favicon.png
 
 # Disqus is a global comment system
 # disqus_shortname: moscow-jekyll-theme #https://disqus.com/
 
 #analytics
-google_analytics: #https://analytics.google.com/
+google_analytics: G-M7B4DN805P
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -152,9 +160,8 @@ about:
   section-title: "About"
   section-tagline: "Me"
   description: >-
-    I am a resourceful developer specially interested in the improvement of peoples'
-    everyday lives through technological innovation and passionate about cybersecurity,
-    the outdoors, language learning, getting to know new people, cultures and places.
+    Developer and Cybersecurity Enthusiast. Always interested in technological innovation, 
+    language learning, outdoor sports, reading and gaming.
   name: Carlos Aponte
   freelance: Available
   address: "Hamburg, Germany"
@@ -266,7 +273,7 @@ interests:
 
 portfolio:
   description: >-
-    Featuring some of the projects in which I have participated along the years
+    Featuring some of the projects in which I have participated.
 
 # Notes:
 #   - Image sizes for mobile apps --> 
@@ -385,4 +392,7 @@ blog:
   section-tagline: "Blog"
   number-of-previews: 3
   description: >-
-   These are some of my latests posts.
+    I write about what I learn, about the side projects that I am working on or about 
+    the ones that I decided to let go. Feel free to reach out if you have any comments, 
+    corrections, or if you want to say hello.
+
