@@ -30,16 +30,13 @@ pageClass: blog
                 <!-- Excerpt Starts -->
                 <div class="blog-excerpt second-font">
                     {{page.content}}
-                    
+
                     <!-- Meta Starts -->
                     <div class="meta second-font">
-                        <span><i class="fa fa-user"></i> <a href="">{{ page.author }}</a></span>
+                        <span><i class="fa fa-user"></i> {{ page.author }} </span>
                         <span class="date"><i class="fa fa-calendar"></i> {{page.date | date_to_string}}</span>
                         <span><i class="fa fa-tags"></i>
-                        {%- for item in page.tags -%}
-							{{ item }}
-							{%- if forloop.last  == false -%},{%- endif -%}
-						{%- endfor -%}
+                            {{  page.tags | join: ', ' }}
                         </span>
                     </div>
                     <!-- Meta Ends -->

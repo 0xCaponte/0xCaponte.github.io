@@ -13,7 +13,11 @@
                 <h6 class="uppercase"><span>{{experience.title}}</span></h6>
                 <h6>{{experience.company}}</h6>
                 <span class="date"><i class="fa fa-calendar-o"></i>{{experience.date}}</span>
-                <p>{{experience.description}}</p>
+
+                <p>
+                    {%- for task in experience.description -%} - {{ task.task }} {%- if forloop.last != true -%} <br> {%- endif -%} {%- endfor -%}
+                </p>
+
             </div>
 
             <!-- Single Experience Ends -->

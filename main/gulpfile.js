@@ -37,6 +37,7 @@ function watch() {
             '_includes/*',
             '_includes/*/*',
             '_includes/*/*/*',
+            'blog',
             'js/*.js',
             'css/*.css',
             'css/skins/*.css',

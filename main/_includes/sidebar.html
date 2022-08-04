@@ -1,20 +1,20 @@
 <div class="sidebar col s12 m4 l4 xl4">
     <div class="row">
         {%- if page.tags -%}
-            <div class="col s6 m6 l6 xl6">
-                <a href="{{'/blog'| relative_url }}" class="btn back"><i class="fa fa-arrow-left"></i> Blog</a>
-            </div>
-            <div class="col s6 m6 l6 xl6">
-                <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> Home</a>
-            </div>
-            {% else %}
-            <div class="col s12 m12 l12 xl12">
-                <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> home</a>
-            </div>
+        <div class="col s6 m6 l6 xl6">
+            <a href="{{'/blog'| relative_url }}" class="btn back"><i class="fa fa-arrow-left"></i> Blog</a>
+        </div>
+        <div class="col s6 m6 l6 xl6">
+            <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> Home</a>
+        </div>
+        {% else %}
+        <div class="col s12 m12 l12 xl12">
+            <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> home</a>
+        </div>
         {%- endif -%}
-        
+
     </div>
-    
+
     {%- if page.postSearch -%}
     <!-- Search Widget Starts -->
     <div class="widget widget-search">
@@ -33,9 +33,9 @@
             {%- for post in site.posts limit:5 -%}
             <!-- Recent Post Widget Starts -->
             <li>
-                <div class="posts-thumb pull-left"> 
+                <div class="posts-thumb pull-left">
                     <a href="{{ post.url }}">
-                        <img alt="img" src="{{post.image | absolute_url }}">
+                        <img alt="img" src="{{post.image }}">
                     </a>
                 </div>
                 <div class="post-info">
@@ -54,7 +54,7 @@
     </div>
     <!-- Latest Posts Widget Ends -->
     <!-- as you wish -->
-    <!-- Categories Widget Starts -->    
+    <!-- Categories Widget Starts -->
     <div class="widget">
         <h3 class="widget-title">Categories</h3>
         <ul class="arrow nav nav-tabs second-font uppercase">
@@ -63,9 +63,9 @@
             {%- endfor -%}
         </ul>
     </div>
-    
+
     <!-- Categories Widget Ends -->
-    
+
     <!-- Tags Widget Starts -->
     <div class="widget widget-tags">
         <h3 class="widget-title">Popular Tags </h3>

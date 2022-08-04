@@ -24,7 +24,7 @@ email:
 # This description will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 description: >- # this (>-) means to ignore newlines until "baseurl:"
-  "Carlos Aponte - Developer, and Cybersecurity Enthusiast."
+  "Carlos Aponte - Developer and Cybersecurity Enthusiast."
 
 
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -82,8 +82,9 @@ jekyll-archives:
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
+  endings: all
   ignore:
-  envs: development
+    envs: development
 
 # dont change this line
 #https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -150,10 +151,10 @@ topleft:
 about:
   section-title: "About"
   section-tagline: "Me"
-  description:
-    "I am a resourceful developer specially interested in the improvement of peoples'
+  description: >-
+    I am a resourceful developer specially interested in the improvement of peoples'
     everyday lives through technological innovation and passionate about cybersecurity,
-    the outdoors, language learning, getting to know new people, cultures and places."
+    the outdoors, language learning, getting to know new people, cultures and places.
   name: Carlos Aponte
   freelance: Available
   address: "Hamburg, Germany"
@@ -197,27 +198,35 @@ experience:
   - date: "10/2019 - Today"
     title: "Senior IT Consultant and Developer"
     company: "Trivelope GmbH (DE)"
-    description: Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit
-
+    description: 
+      - task: Planning and implementation of digitalization, automation, and optimization projects in the insurance sector.
+  
   - date: "08/2018 - 09/2019"
     title: "IT Consultant and Developer"
     company: "Senacor Technologies AG (DE)"
-    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+    description: 
+      - task: Project management, design and software development work for financial institutions. 
 
   - date: "04/2015 - 02/2017"
     title: "Senior Developer for mobile Apps and Assistent PM"
     company: "IT Security Solutions (VE)"
-    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+    description:
+      - task: iOS and Backend development of Fintech solutions.
+      - task: Agile project management.
 
   - date: "03/2016 - 02/0217"
     title: "Freelance iOS and Backend Developer"
-    company: "Kiwi Applications LLV - ComeWith Inc"
-    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+    company: "Kiwi Applications LLC - ComeWith Inc"
+    description: 
+      - task: Development and overhaul of the Backends and iOS Apps.
+      - task: Requirement gathering, effort estimation and design of development plans.
 
   - date: "01/2011 - 03/2015"
     title: "SysAdmin and Teacher's Assistant"
     company: "Simon Bolivar university (VE)"
-    description: Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt
+    description:
+      - task: Taught weekly practical sessions of Algorithms & Data Structures, Linear Programming and Basic Informatics.
+      - task: SysAdmin for critical IT services and Linux/Unix clients.
 
 education:
   - date: 09/2017 - 03/2019
@@ -254,7 +263,15 @@ interests:
   - description: Chess and strategy games
 
 # portfolio
+
+portfolio:
+  description: >-
+    Featuring some of the projects in which I have participated along the years
+
+# Notes:
+#   - Image sizes for mobile apps --> 
 portfolios:
+
   - title: Pago Móvil (p2p)
     technologies: iOS, Swift, Objective-C, X-Code, OpenSSL
     client: IT Security Solutions C.A.
@@ -296,22 +313,19 @@ portfolios:
       layoffs, together with both graphical and table representations of this data.
     content:
       - type: "image"
-        source: /resources/images/projects/laboralerts/la1.png
+        source: /resources/images/projects/laboralerts/la-1.png
       - type: "image"
-        source: /resources/images/projects/laboralerts/la2.png 
+        source: /resources/images/projects/laboralerts/la-2.png 
       - type: "image"
-        source: /resources/images/projects/laboralerts/la3.png    
+        source: /resources/images/projects/laboralerts/la-3.png    
       - type: "image"
-        source: /resources/images/projects/laboralerts/la4.png
+        source: /resources/images/projects/laboralerts/la-4.png
       - type: "image"
-        source: /resources/images/projects/laboralerts/la5.png
+        source: /resources/images/projects/laboralerts/la-5.png
       - type: "image"
-        source: /resources/images/projects/laboralerts/la6.png
+        source: /resources/images/projects/laboralerts/la-6.png
       - type: "image"
-        source: /resources/images/projects/laboralerts/la7.png
-      - type: "image"
-        source: /resources/images/projects/laboralerts/la8.png
-
+        source: /resources/images/projects/laboralerts/la-7.png
 
   - title: Movida Chacao
     technologies: Android, Android Studio, Java, Wikitude
@@ -365,51 +379,10 @@ portfolios:
         source: /resources/images/projects/nagiosAlert/nagioslAlert-5.png
 
 
-
-#contact page
-# contract:
-#  page-title: '<span data-hover="get">get </span><span data-hover="in touch">in touch</span>>'
-#  info: "Feel free to drop me a line"
-#  description: "If you have any suggestion, project or even you want to say Hello... Please fill out the form below and I will reply you shortly."
-
-#+ socials
-socials:
-  phone:
-    name: Phone
-    icon: "fa fa-phone"
-    value: "+34 62 11 84 01"
-  email:
-    name: Email
-    icon: "fa fa-envelope"
-    value: " you@youwebsite.com"
-  skype:
-    name: Skype
-    icon: "fa fa-skype"
-    value: "linda.smith"
-  address:
-    name: Address
-    icon: "fa fa-home"
-    value: "Moscow, Russia"
-  facebook:
-    name: Facebook
-    icon: "fa fa-facebook"
-    value: "#"
-    class: "facebook"
-  twitter:
-    name: Twitter
-    icon: "fa fa-twitter"
-    value: "#"
-    class: "twitter"
-  google:
-    name: Google
-    icon: "fa fa-google-plus"
-    value: "#"
-    class: "google-plus"
-  linkedin:
-    name: linkedin
-    icon: "fa fa-linkedin"
-    value: "#"
-    class: "linkedin"
-    
-# https://usebasin.com/f/ae5cdb663a3f{site.form_id}
-# form_id: ae5cdb663a3f
+# Blog page
+blog:
+  section-title: "My"
+  section-tagline: "Blog"
+  number-of-previews: 3
+  description: >-
+   These are some of my latests posts.

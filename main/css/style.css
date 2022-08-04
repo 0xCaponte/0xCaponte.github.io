@@ -204,10 +204,6 @@ body {
     justify-content: center;
 }
 
-.about-buttons .justified-center {
-    flex: 0 0 100%;
-}
-
 
 /* Dark Body
 ================================================== */
@@ -818,8 +814,8 @@ section.bl-expand .bl-icon-close {
     color: #fff;
 }
 
-.about-buttons {
-    padding: 34px 0;
+.about-button {
+    margin-top: 15px;
 }
 
 
@@ -999,6 +995,11 @@ span.separator {
 .bl-panel-items .carousel .indicators,
 .bl-panel-items .carousel .responsive-img {
     border: none;
+}
+
+video.responsive-video {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -1543,12 +1544,14 @@ body.blog .meta {
     font-size: 14px;
 }
 
-body.blog .meta span {
+body.blog .meta span,
+.blog-excerpt .meta span {
     margin-right: 15px;
     display: inline-block;
 }
 
-body.blog .meta i {
+body.blog .meta i,
+.blog-excerpt .meta i {
     padding-right: 6px;
 }
 
