@@ -215,7 +215,7 @@ experience:
       - task: Project management, design and software development work for financial institutions. 
 
   - date: "04/2015 - 02/2017"
-    title: "Senior Developer for mobile Apps and Assistent PM"
+    title: "Senior Developer for mobile Apps and Assistant PM"
     company: "IT Security Solutions (VE)"
     description:
       - task: iOS and Backend development of Fintech solutions.
@@ -239,7 +239,7 @@ education:
   - date: 09/2017 - 03/2019
     title: "International Master in Project Management"
     institution: "MIP Politecnico di Milano (IT) – Strathclyde Business School (GB)"
-    thesis: "Integration of Agile Methodologies in a Waterfall Enviroment"
+    thesis: "Integration of Agile Methodologies in a Waterfall Environment"
     extras: "Cum Laude"
 
   - date: 09/2019 - 10/2015
@@ -264,8 +264,8 @@ skills:
   - name: Software Architecture
 
 interests:
-  - description: Traveling the world and geting to know new people, cultures and places
-  - description: Learning lenguages by reading, movies, series, meetups and tandems
+  - description: Traveling the world and getting to know new people, cultures and places
+  - description: Learning languages by reading, movies, series, meetups and tandems
   - description: Fitness, dancing, baseball, surf, yoga, trekking, boxing
   - description: Chess and strategy games
 
@@ -273,7 +273,7 @@ interests:
 
 portfolio:
   description: >-
-    Featuring some of the projects in which I have participated.
+    Featuring some projects in which I have participated.
 
 # Notes:
 #   - Image sizes for mobile apps --> 
