@@ -22,15 +22,15 @@
 # Execute the following command:
 #     JEKYLL_ENV=production jekyll serve          
 #  
-environment: production
+# environment: production
 
 title: Carlos Aponte
-email: 
+email: carlos@caponte.io
 
 # This description will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 description: >- # this (>-) means to ignore newlines until "baseurl:"
-  Carlos Aponte - Developer and Cybersecurity Enthusiast.
+  Developer and Cybersecurity Enthusiast.
 
 
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -51,6 +51,12 @@ sort_reverse: true
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feed
+feed:
+  excerpt_only: true
 
 # Archives
 #  Type
@@ -165,7 +171,7 @@ about:
   name: Carlos Aponte
   freelance: Available
   address: "Hamburg, Germany"
-  email: capontetoro@gmail.com
+  email: carlos@caponte.io
   mother-tongue: Spanish
   other-langages: English - German - Portuguese
 
@@ -189,7 +195,7 @@ about:
 
     - description: "Twitter"
       icon: fa fa-twitter
-      link: https://twitter.com/
+      link: https://twitter.com/0xEnna_IT
 
 #+
 experience-title: Experience
@@ -396,3 +402,26 @@ blog:
     the ones that I decided to let go. Feel free to reach out if you have any comments, 
     corrections, or if you want to say hello.
 
+ 
+#################
+#  SEO Tags
+#################
+
+author: Carlos Aponte
+og_image: /resources/images/profile.png
+image: /resources/images/profile.png
+
+twitter:
+  username: 0xEnna_IT
+  card: summary
+
+social:
+  name: Carlos Aponte
+  links:
+    - https://github.com/ur3k
+    - https://www.linkedin.com/in/capontetoro/
+    - https://stackoverflow.com/users/1270603
+    - https://twitter.com/0xEnna_IT
+
+webmaster_verifications:
+  google: 
