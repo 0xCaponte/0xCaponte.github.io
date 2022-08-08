@@ -1,7 +1,7 @@
 --- 
 layout: default
 pageClass: blog
-title: Experiment Stories 
+title: Experiment Stories
 ---
 
 <div class="container page-title center-align">
@@ -12,7 +12,7 @@ title: Experiment Stories
 </div>
 
 <div class="container">
-    
+
     <!-- Divider Starts -->
     <div class="divider center-align">
         <span class="outer-line"></span>
@@ -46,28 +46,30 @@ title: Experiment Stories
                     <!-- Excerpt Starts -->
                     <div class="blog-excerpt">
                         <p class="second-font">{{post.summary}}</p>
-                        <a href="{{post.url}}" class="col s12 m4 l4 xl4 waves-effect waves-light btn readmore font-weight-700">
-						Read more 
-					</a>
-                        <!-- Meta Starts -->
-                        <div class="meta second-font">
-                            <span><i class="fa fa-user"></i>{{post.author}}</span>
-                            <span class="post-date"><i class="fa fa-calendar"></i> {{post.date | date_to_string}}</span>
-                            <span><i class="fa fa-tags"></i> {{  post.tags | join: ', ' }} </span>
-                            <span class="permalink">
+                        <div>
+                            <a href="{{post.url}}" class="col s12 m4 l4 xl4 waves-effect waves-light btn readmore font-weight-700">
+						      Read more
+                            </a>
+                        </div> 
+                            <!-- Meta Starts -->
+                            <div class="meta second-font">
+                                <span><i class="fa fa-user"></i>{{post.author}}</span>
+                                <span class="post-date"><i class="fa fa-calendar"></i> {{post.date | date_to_string}}</span>
+                                <span><i class="fa fa-tags"></i> {{  post.tags | join: ', ' }} </span>
+                                <span class="permalink">
 							<i class="fa fa-link"></i> 
 							<a href="{{post.url}}">permalink</a>
 						</span>
+                            </div>
+                            <!-- Meta Ends -->
                         </div>
-                        <!-- Meta Ends -->
-                    </div>
-                    <!-- Excerpt Ends -->
+                        <!-- Excerpt Ends -->
                 </article>
                 <!-- Article Ends -->
                 {%- endfor -%} {%- include pagination.html -%}
+                </div>
+                <!-- Sidebar Starts -->
+                {%- include sidebar.html -%}
+                <!-- Sidebar Ends -->
             </div>
-            <!-- Sidebar Starts -->
-            {%- include sidebar.html -%}
-            <!-- Sidebar Ends -->
         </div>
-    </div>
