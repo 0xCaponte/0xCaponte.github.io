@@ -1,18 +1,11 @@
 <div class="sidebar col s12 m4 l4 xl4">
     <div class="row">
-        {%- if page.tags -%}
         <div class="col s6 m6 l6 xl6">
             <a href="{{'/blog'| relative_url }}" class="btn back"><i class="fa fa-arrow-left"></i> Blog</a>
         </div>
         <div class="col s6 m6 l6 xl6">
             <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> Home</a>
         </div>
-        {% else %}
-        <div class="col s12 m12 l12 xl12">
-            <a href="{{'/'| relative_url }}" class="btn back"><i class="fa fa-home"></i> home</a>
-        </div>
-        {%- endif -%}
-
     </div>
 
     {%- if page.postSearch -%}
@@ -29,7 +22,9 @@
     <!-- Latest Posts Widget Ends -->
     <!-- as you wish -->
     <!-- Categories Widget Starts -->
+    {%- if site.categories > 0 -%}
     <div class="widget">
+
         <h3 class="widget-title">Categories</h3>
         <ul class="arrow nav nav-tabs second-font uppercase">
             {%- for category in site.categories -%}
@@ -37,12 +32,13 @@
             {%- endfor -%}
         </ul>
     </div>
+    {%- endif -%}
 
     <!-- Categories Widget Ends -->
 
     <!-- Tags Widget Starts -->
     <div class="widget widget-tags">
-        <h3 class="widget-title">Popular Tags </h3>
+        <h3 class="widget-title center-align">Popular Tags</h3>
         <ul class="unstyled clearfix">
             {%- for tag in site.tags -%}
             <li><a href="/blog/tags/{{ tag[0] | slugify }}">{{ tag | first }}</a></li>

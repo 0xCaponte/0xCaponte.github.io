@@ -1,4 +1,4 @@
----
+--- 
 layout: default
 pageClass: blog
 ---
@@ -24,7 +24,7 @@ pageClass: blog
                 <h4>{{page.title}}</h4>
                 <!-- Figure Starts -->
                 <figure class="blog-figure">
-                    <img class="responsive-img" src="{{post.image | absolute_url }}" alt="">
+                    <img class="responsive-img" src="{{ page.image }}" alt="">
                 </figure>
                 <!-- Figure Ends -->
                 <!-- Excerpt Starts -->
@@ -42,10 +42,6 @@ pageClass: blog
                     <!-- Meta Ends -->
                 </div>
                 <!-- Excerpt Ends -->
-                <!-- Comments Starts -->
-                <div class="comments">
-                    {%- include disqus-comments.html -%}
-                </div>
             </article>
             <!-- Article Ends -->
         </div>
