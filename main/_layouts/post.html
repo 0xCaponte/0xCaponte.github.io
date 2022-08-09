@@ -22,11 +22,6 @@ pageClass: blog
             <!-- Article Starts -->
             <article>
                 <h4>{{page.title}}</h4>
-                <!-- Figure Starts -->
-                <figure class="blog-figure">
-                    <img class="responsive-img" src="{{ page.image }}" alt="">
-                </figure>
-                <!-- Figure Ends -->
                 <!-- Excerpt Starts -->
                 <div class="blog-excerpt second-font">
                     {{page.content}}
@@ -45,6 +40,10 @@ pageClass: blog
             </article>
             <!-- Article Ends -->
         </div>
+
+        <!-- Sidebar Starts -->
         {%- include sidebar.html -%}
+        <!-- Sidebar Ends -->
     </div>
+
 </div>

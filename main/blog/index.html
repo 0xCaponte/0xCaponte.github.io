@@ -37,7 +37,7 @@ title: Experiment Stories
                         <h4>{{post.title}}</h4>
                     </a>
                     <!-- Figure Starts -->
-                    <figure class="blog-figure center-align">
+                    <figure class="blog-figure">
                         <a href="{{post.url}}">
                             <img class="responsive-img" src="{{post.image }}" alt="{{post.title}} post">
                         </a>
@@ -46,9 +46,11 @@ title: Experiment Stories
                     <!-- Excerpt Starts -->
                     <div class="blog-excerpt">
                         <p class="second-font">{{post.summary}}</p>
-                        <a href="{{post.url}}" class="center-align waves-effect waves-light btn readmore font-weight-700">
-						Read more
-                        </a>
+                        <div class="justified readmore">
+                            <a href="{{post.url}}" class="center-align waves-effect waves-light btn readmore font-weight-700">
+    						Read more
+                            </a>
+                        </div>
                         <!-- Meta Starts -->
                         <div class="meta second-font">
                             <span><i class="fa fa-user"></i>{{post.author}}</span>
@@ -70,4 +72,6 @@ title: Experiment Stories
             {%- include sidebar.html -%}
             <!-- Sidebar Ends -->
         </div>
+
     </div>
+

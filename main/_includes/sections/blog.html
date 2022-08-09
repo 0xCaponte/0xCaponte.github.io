@@ -48,9 +48,6 @@
                                 <div class="col s12 m6 l6 xl4" data-panel="panel-{{ forloop.index }}">
                                     <a href="#">
                                         <article>
-                                            <a href="{{post.url}}">
-                                                <h6>{{post.title}}</h6>
-                                            </a>
                                             <!-- Figure Starts -->
                                             <figure class="blog-figure">
                                                 <a href="{{post.url}}">
@@ -61,6 +58,10 @@
 
                                             <!-- Excerpt Starts -->
                                             <div class="blog-excerpt">
+
+                                                <a href="{{post.url}}">
+                                                    <h6>{{post.title}}</h6>
+                                                </a>
 
                                                 <p class="second-font">{{post.summary}}</p>
 

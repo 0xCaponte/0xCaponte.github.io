@@ -141,6 +141,7 @@ body {
 
 .wrapper {
     overflow: hidden;
+    padding-bottom: 5%;
 }
 
 .section-padding {
@@ -1505,9 +1506,12 @@ body.blog .container.page-title h2 {
     font-size: 55px;
 }
 
+
+/*
 .blog-figure img.responsive-img {
     max-width: 75%
 }
+*/
 
 
 /*** Posts ***/
@@ -1560,6 +1564,10 @@ body.blog .meta span,
 body.blog .meta i,
 .blog-excerpt .meta i {
     padding-right: 6px;
+}
+
+.blog-excerpt .readmore {
+    padding-bottom: 15px;
 }
 
 
