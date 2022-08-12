@@ -1,7 +1,7 @@
-./main/_site/
-./main/.sass-cache/
-./main/.jekyll-cache/
-./main/.jekyll-metadata
-./main/node_modules/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+node_modules/
 *.Ide
 *Zone.Identifier
