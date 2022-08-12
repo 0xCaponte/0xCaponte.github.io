@@ -172,8 +172,8 @@ about:
   freelance: Available
   address: "Hamburg, Germany"
   email: carlos@caponte.io
-  mother-tongue: Spanish
-  other-langages: English - German - Portuguese
+  native-language: Spanish
+  other-languages: English - German - Portuguese
 
   #download cv link
   cv-download-text: "Download CV"
@@ -261,6 +261,7 @@ skills:
   - name: Hibernate
   - name: SQL
   - name: Git
+  - name: Linux
   - name: AWS
   - name: MS Suite
   - name: Jekyll
