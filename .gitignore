@@ -3,3 +3,5 @@
 ./main/.jekyll-cache/
 ./main/.jekyll-metadata
 ./main/node_modules/
+*.Ide
+*Zone.Identifier
