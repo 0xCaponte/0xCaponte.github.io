@@ -351,7 +351,7 @@ portfolios:
       Reto Chacao - App Challenge of 2015 with aims of helping with the modernization and digitalization efforts of the municipality.
       The app allowed people to get informed, interact and participate in all activities happening in this municipality. 
       The app offered a complete and curated overview of the activities by means of a classical social feed, a map to locate the activities 
-      and a VR function to see what event was happening at a given time on a specific place or direction.
+      and a AR function to see what event was happening at a given time on a specific place or direction.
     content:
       - type: "video"
         source: /resources/videos/projects/movidachacao/mc.mp4
