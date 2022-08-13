@@ -738,12 +738,14 @@ section.bl-expand .bl-icon-close {
     max-width: 960px;
 }
 
+.bl-main>section.topleft .bl-box h1,
 .bl-main>section.topleft .bl-box h3 {
     font-size: 28px;
     margin: 25px 0 5px;
     font-weight: 900;
 }
 
+.bl-main>section.topleft .bl-box h1 span,
 .bl-main>section.topleft .bl-box h3 span {
     color: #666;
     padding: 0;
@@ -1053,10 +1055,11 @@ video.responsive-video {
     height: 100%;
 }
 
+#bl-work-items>div span,
 #bl-work-items>div a div span {
     margin: 0 auto;
-    text-transform: uppercase;
     color: #fff;
+    padding: 5px;
 }
 
 #bl-work-items>div a {
@@ -1498,6 +1501,10 @@ ul.social-intro li a {
 /* Blog Section
 ================================================== */
 
+.btn-padding {
+    padding-top: 23px !important;
+}
+
 body.blog .btn.back {
     background: transparent;
     width: 100%;
@@ -1541,6 +1548,13 @@ body.blog figure {
 
 body.blog figure a img {
     width: 100%;
+}
+
+body.blog article h1 {
+    font-size: 28px;
+    margin: 25px 0 5px;
+    font-weight: 900;
+    color: #fff;
 }
 
 body.blog article h4 {
@@ -1913,6 +1927,7 @@ body.blog .pagination li a i {
         font-size: 35px;
         margin: 20px 0;
     }
+    .bl-main>section.topleft .bl-box h1 span,
     .bl-main>section.topleft .bl-box h3 span {
         font-size: 25px;
     }
@@ -1935,6 +1950,9 @@ body.blog .pagination li a i {
     .resume-list-item-inner {
         padding-top: 23px !important;
         padding: 20px !important;
+    }
+    .resume-list-item-title-text {
+        display: none;
     }
     .resume-list-item-title-text {
         display: none;
@@ -2137,6 +2155,9 @@ body.blog .pagination li a i {
     }
     .btn.back {
         border-left: 0;
+    }
+    .btn-padding {
+        padding-top: 0 !important;
     }
     body.blog .btn.back {
         width: 100%;
