@@ -228,6 +228,8 @@ body.blog.dark .btn.back {
 }
 
 body.dark .bl-main>section.topleft .bl-box .ah-headline.clip .my-name,
+body.dark .page-title h1 span:first-child,
+body.dark .page-title h1 span:nth-child(2)::before,
 body.dark .page-title h2 span:first-child,
 body.dark .page-title h2 span:nth-child(2)::before,
 body.dark .personal-info h6,
@@ -389,6 +391,7 @@ body.dark .responsive-video {
     position: relative;
 }
 
+.page-title h1,
 .page-title h2 {
     font-size: 40px;
     position: relative;
@@ -404,42 +407,52 @@ body.dark .responsive-video {
     left: 0;
 }
 
+.bl-main>section.bl-expand .page-title h1,
 .bl-main>section.bl-expand .page-title h2 {
     font-size: 55px;
 }
 
+.bl-main>section:not(.bl-expand):hover .page-title h1 span:first-child,
 .bl-main>section:not(.bl-expand):hover .page-title h2 span:first-child {
     transform: translate3d(0, -105%, 0);
 }
 
+.bl-main>section:not(.bl-expand):hover .page-title h1 span:nth-child(2),
 .bl-main>section:not(.bl-expand):hover .page-title h2 span:nth-child(2) {
     transform: translate3d(0, 105%, 0);
 }
 
+.page-title h1,
 .page-title h2 {
     overflow: hidden;
 }
 
+.page-title h1 span,
 .page-title h2 span {
     display: inline-block;
     position: relative;
     transition: transform 0.3s;
 }
 
+.page-title h1 span:first-child::before,
+.page-title h1 span:nth-child(2)::before,
 .page-title h2 span:first-child::before,
 .page-title h2 span:nth-child(2)::before {
     position: absolute;
     content: attr(data-hover);
 }
 
+.page-title h1 span:first-child,
 .page-title h2 span:first-child {
     color: #666;
 }
 
+.page-title h1 span:first-child::before,
 .page-title h2 span:first-child::before {
     top: 105%;
 }
 
+.page-title h1 span:nth-child(2)::before,
 .page-title h2 span:nth-child(2)::before {
     bottom: 105%;
     color: #666;
@@ -606,6 +619,7 @@ body.dark .responsive-video {
     cursor: pointer;
 }
 
+.bl-box h1,
 .bl-box h2 {
     width: 100%;
     margin: 0 auto;
@@ -1502,6 +1516,7 @@ body.blog .container.page-title {
     margin-top: 80px;
 }
 
+body.blog .container.page-title h1,
 body.blog .container.page-title h2 {
     font-size: 55px;
 }
@@ -1887,6 +1902,7 @@ body.blog .pagination li a i {
 /*================================================== */
 
 @media (max-width:1419px) {
+    .page-title h1,
     .page-title h2 {
         font-size: 30px;
     }
@@ -1902,12 +1918,6 @@ body.blog .pagination li a i {
     }
     .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
         font-size: 25px;
-    }
-}
-
-@media (max-width: 992px) and (min-width:601px) {
-    .profile-picture.section-padding {
-        padding-right: 0 !important;
     }
 }
 
@@ -1930,6 +1940,12 @@ body.blog .pagination li a i {
         display: none;
     }
     /* Find Color settings in blue.css */
+}
+
+@media (max-width: 992px) and (min-width:601px) {
+    .profile-picture.section-padding {
+        padding-right: 0 !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -2011,6 +2027,7 @@ body.blog .pagination li a i {
         padding-right: 15px;
         padding-bottom: 24px;
     }
+    body.blog .container.page-title h1,
     body.blog .container.page-title h2 {
         font-size: 35px;
     }
@@ -2194,14 +2211,22 @@ body.blog .pagination li a i {
         top: -15px;
         width: 100%;
     }
+    .page-title h1,
     .page-title h2 {
         font-size: 24px;
     }
+    .bl-main>section.bl-expand .page-title h1,
     .bl-main>section.bl-expand .page-title h2 {
         font-size: 35px;
     }
     .resume-card-body-container {
         padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .badges .badge-text {
+        display: none;
     }
 }
 

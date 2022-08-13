@@ -2,11 +2,11 @@
     <!-- About Title Starts -->
     <div class="bl-box valign-wrapper">
         <div class="page-title center-align">
-            <h2 class="center-align">
+            <h1 class="center-align">
                 <span data-hover="{{ site.about.section-title }}">{{ site.about.section-title }}
                 </span>
                 <span data-hover="{{ site.about.section-tagline }}">{{ site.about.section-tagline }}</span>
-            </h2>
+            </h1>
         </div>
     </div>
     <!-- About Title Ends -->
@@ -14,10 +14,10 @@
     <div class="bl-content">
         <!-- Main Heading Starts -->
         <div class="container page-title custom-page-title">
-            <h2 class="center-align">
+            <h1 class="center-align">
                 <span>{{ site.about.section-title }}</span>
                 <span>{{ site.about.section-tagline }}</span>
-            </h2>
+            </h1>
         </div>
         <!-- Main Heading Ends -->
         <div class="container infos">
@@ -86,6 +86,7 @@
             </div>
             <!-- Personal Informations Ends -->
         </div>
+
         <!-- Resume Starts -->
         {%- include sections/resume.html -%}
         <!-- Resume Ends -->
@@ -102,7 +103,7 @@
                         <h3><i href="{{item.link}}" class="{{item.icon}}"></i></h3>
                     </a>
 
-                    <a href="{{item.link}}" target="_blank" class="font-weight-700">
+                    <a href="{{item.link}}" target="_blank" class="badge-text font-weight-700">
                         <h6>
                             {{item.description}}
                         </h6>

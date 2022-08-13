@@ -25,13 +25,12 @@
 # environment: production
 
 title: Carlos Aponte
-email: carlos@caponte.io
+email: 
 
 # This description will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 description: >- # this (>-) means to ignore newlines until "baseurl:"
-  Developer and Cybersecurity Enthusiast.
-
+  Carlos Aponte - Developer and Cybersecurity Enthusiast.
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://caponte.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -171,12 +170,12 @@ about:
   name: Carlos Aponte
   freelance: Available
   address: "Hamburg, Germany"
-  email: carlos@caponte.io
+  email: carlos at this domain :D 
   native-language: Spanish
   other-languages: English - German - Portuguese
 
   #download cv link
-  cv-download-text: "Download CV"
+  cv-download-text: "All Details - Download CV"
   cv-download-link: "#"
 
   # Boxes Starts - Footer Icons and Links
