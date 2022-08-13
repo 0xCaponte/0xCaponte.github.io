@@ -2,10 +2,10 @@
     <!-- Portfolio Title Starts -->
     <div class="bl-box valign-wrapper">
         <div class="page-title center-align">
-            <h1 class="center-align">
+            <h2 class="center-align">
                 <span data-hover="my">my </span>
                 <span data-hover="projects">projects</span>
-            </h1>
+            </h2>
         </div>
     </div>
     <!-- Portfolio Title Ends -->
@@ -13,10 +13,10 @@
     <div class="bl-content">
         <!-- Main Heading Starts -->
         <div class="container page-title center-align">
-            <h1 class="center-align">
+            <h2 class="center-align">
                 <span data-hover="my">my </span>
                 <span data-hover="projects">projects</span>
-            </h1>
+            </h2>
         </div>
         <!-- Main Heading Ends -->
         <div class="container">
@@ -38,9 +38,11 @@
                 <!-- Project Starts -->
                 <div class="col s12 m6 l6 xl4" data-panel="panel-{{ forloop.index }}">
                     <a href="#">
-                        <img class="responsive-img" src="{{portfolio.preview-image | relative_url }}" alt="Project" />
-                        <div class="valign-wrapper"><span class="font-weight-700">{{portfolio.title}}</span></div>
+                        <img class="responsive-img" src="{{portfolio.preview-image | relative_url }}" alt="{{portfolio.title }}" />
+                        <div class="valign-wrapper"><span class="font-weight-700">{{ portfolio.mini-description }}</span></div>
                     </a>
+
+                    <span clas="font-weight-700">{{portfolio.title }}</span>
                 </div>
                 <!-- Project Ends -->
                 {%- endfor -%}
