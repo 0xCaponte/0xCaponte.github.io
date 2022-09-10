@@ -30,7 +30,7 @@ email:
 # This description will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
 description: >- # this (>-) means to ignore newlines until "baseurl:"
-  Carlos Aponte - Developer and Cybersecurity Enthusiast.
+  Carlos Aponte - Developer and CyberSec Enthusiast.
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://caponte.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -159,13 +159,13 @@ exclude:
 topleft:
   wellcome: "I'm"
   my-name: "Carlos Aponte"
-  description: '<b class="is-visible">Developer</b> <b>Cybersecurity Enthusiast</b>'
+  description: '<b class="is-visible">Developer</b> <b>CyberSec Enthusiast</b>'
 #about
 about:
   section-title: "About"
   section-tagline: "Me"
   description: >-
-    Developer and Cybersecurity Enthusiast. Always interested in technological innovation, 
+    Developer and CyberSec Enthusiast. Interested in technological innovation, 
     language learning, outdoor sports, reading and gaming.
   name: Carlos Aponte
   freelance: Available
@@ -194,8 +194,8 @@ about:
 
     - description: "Twitter"
       icon: fa fa-twitter
-      link: https://twitter.com/0xEnna_IT
-
+      link: https://twitter.com/0xCaponte
+      
 #+
 experience-title: Experience
 #+
@@ -418,7 +418,7 @@ og_image: /resources/images/profile.png
 image: /resources/images/profile.png
 
 twitter:
-  username: 0xEnna_IT
+  username: 0xCaponte
   card: summary
 
 social:
@@ -427,7 +427,7 @@ social:
     - https://github.com/ur3k
     - https://www.linkedin.com/in/capontetoro/
     - https://stackoverflow.com/users/1270603
-    - https://twitter.com/0xEnna_IT
+    - https://twitter.com/0xCaponte
 
 webmaster_verifications:
   google: 

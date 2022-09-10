@@ -1529,13 +1529,6 @@ body.blog .container.page-title h2 {
 }
 
 
-/*
-.blog-figure img.responsive-img {
-    max-width: 75%
-}
-*/
-
-
 /*** Posts ***/
 
 body.blog article {
@@ -1557,12 +1550,14 @@ body.blog article h1 {
     color: #fff;
 }
 
+
+/*** 
 body.blog article h4 {
-    text-transform: uppercase;
     font-weight: 600;
     font-size: 28px;
     margin: 0 0 24px;
 }
+***/
 
 body.blog .readmore.btn {
     height: 42px;
@@ -1582,6 +1577,23 @@ body.blog .meta {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
+}
+
+body.blog article img {
+    width: 100%;
+}
+
+body.blog article table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #fff;
+}
+
+body.blog article table th,
+body.blog article table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #fff;
 }
 
 body.blog .meta span,
