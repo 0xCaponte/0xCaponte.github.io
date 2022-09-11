@@ -65,7 +65,7 @@ html {
 
 body {
     font-family: 'Lato', serif, Calibri, Arial;
-    color: #656c6d;
+    color: #aaa;
     background: #efe9e9;
     font-size: 1em;
     font-weight: 400;
@@ -1585,6 +1585,11 @@ body.blog article h4 {
 
 body.blog article code {
     padding-left: 40px;
+    display: inline-block;
+    white-space: normal;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 body.blog article ul,
