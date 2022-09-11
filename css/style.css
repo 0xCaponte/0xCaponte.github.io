@@ -1529,13 +1529,6 @@ body.blog .container.page-title h2 {
 }
 
 
-/*
-.blog-figure img.responsive-img {
-    max-width: 75%
-}
-*/
-
-
 /*** Posts ***/
 
 body.blog article {
@@ -1550,18 +1543,58 @@ body.blog figure a img {
     width: 100%;
 }
 
+body.blog article .intro hr {
+    margin: 35px 0 35px 0;
+}
+
+body.blog article strong {
+    font-weight: 900;
+}
+
 body.blog article h1 {
-    font-size: 28px;
+    font-size: 40px;
     margin: 25px 0 5px;
     font-weight: 900;
     color: #fff;
+    line-height: 1.25em;
+}
+
+body.blog article h2 {
+    font-size: 30px;
+    margin: 25px 0 5px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25em;
+}
+
+body.blog article h3 {
+    font-size: 26px;
+    margin: 25px 0 5px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.25em;
 }
 
 body.blog article h4 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 28px;
-    margin: 0 0 24px;
+    font-size: 20px;
+    margin: 25px 0 5px;
+    font-weight: 300;
+    color: #fff !important;
+    line-height: 1.25em;
+}
+
+body.blog article code {
+    padding-left: 40px;
+}
+
+body.blog article ul,
+body.blog article ul li {
+    padding-left: revert;
+    list-style-type: circle
+}
+
+body.blog article figcaption {
+    margin-top: -20px;
 }
 
 body.blog .readmore.btn {
@@ -1569,10 +1602,11 @@ body.blog .readmore.btn {
     line-height: 42px;
     font-size: 15px;
     margin: auto;
+    color: #fff;
 }
 
 body.blog p {
-    line-height: 2;
+    line-height: 1.6;
 }
 
 body.blog .meta {
@@ -1582,6 +1616,23 @@ body.blog .meta {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
+}
+
+body.blog article img {
+    width: 100%;
+}
+
+body.blog article table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #fff;
+}
+
+body.blog article table th,
+body.blog article table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #fff;
 }
 
 body.blog .meta span,

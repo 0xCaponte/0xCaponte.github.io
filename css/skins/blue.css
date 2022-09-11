@@ -23,8 +23,7 @@ body.blog .meta a,
 .sidebar ul.nav-tabs li.active a,
 .sidebar ul.nav-tabs li:hover a,
 body.blog .btn.back-homepage,
-body.blog article h4,
-body.blog article h4:hover,
+body.blog article strong,
 body.blog.dark .sidebar ul.nav-tabs li a:hover,
 body.blog.dark .widget.recent-posts .entry-title a:hover,
 .comments-list .comment-reply:hover,
@@ -63,6 +62,13 @@ body.blog .btn.back:hover,
 body.blog .btn.back,
 .personal-info a.btn.btn-blog {
     border: 1px solid #03a9f4;
+}
+
+
+/* Dark Secundary Color for blog content */
+
+body.blog article a {
+    color: #007ac1;
 }
 
 
