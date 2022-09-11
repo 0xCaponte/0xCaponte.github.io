@@ -84,17 +84,17 @@ Having taken care of that I created a new **Set Static** rule for each header to
 
 Here, I won't go over each of the headers as the [OWASP’s Secure Headers Project](https://owasp.org/www-project-secure-headers) lists and explains most of them. Instead, I will just cover the ones whose functions weren't clear to me or whose values weren't so straightforward to set. These headers were:
 
-**- Expect-CT:** 
+**- Expect-CT** 
 
 This header is deprecated and obsolete but Cloudflare still adds it to the responses based on my certificate. I looked into this and decided to let it be as [according to the IETF](https://datatracker.ietf.org/doc/rfc9163/) this can still provide information about insecure connections.
 
-**- Permissions-Policy:** 
+**- Permissions-Policy** 
 
 This header is not covered by [OWASP’s Secure Headers Project](https://owasp.org/www-project-secure-headers) but was brought to my attention by the suggestions made by [Scott Helme’s security headers tests](https://securityheaders.com), [his post about it](https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/), and [this W3C's explanation.](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
 
 In summary, this header allows us to enable or disable access to browser features and APIs, for example, the accelerometer, keyboard-map or the microphone. As you can imagine, this is very use case specific but can be customized by using the [Permissions-Policy header generator made by Todd Wiggins Software](https://www.permissionspolicy.com/).
 
-**- Referrer-Policy:**
+**- Referrer-Policy**
 
 	Referrer-Policy: strict-origin-when-cross-origin
 
@@ -104,7 +104,7 @@ Grants more privacy to the users as it will just send the site's main URL as ref
 | ----------------------------- | ------------------- |
 | https://caponte.io/blog/post1 | https://caponte.io/ |
 
-**- X-Frame-Options:**
+**- X-Frame-Options**
 
 	X-Frame-Options: deny
 
@@ -112,7 +112,7 @@ Prevents the website to be loaded into frames.
 
 This could make sense or be problematic depending on your use cases. In my case, the only issue that I faced was that using online tools to test the website's appearance on mobile devices was no longer possible as most of them render the website inside frames. As a workaround, I just removed this header while testing the website and re-enabled it later on.
 
-**- Content Security Policy (CSP):** 
+**- Content Security Policy (CSP)** 
 
 This header controls what sources can be loaded on the website and which ones can not. In practice, this means that a misconfiguration on the side of too strict a policy can break the website's functionalities, while a too flexible configuration can open the door to XSS vulnerabilities. 
 
