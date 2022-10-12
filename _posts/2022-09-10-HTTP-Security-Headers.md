@@ -157,11 +157,11 @@ Some other free hosting providers like [Netlify](https://www.netlify.com/) or ev
 ## Edits
 
 ### 12.10.2022 - New A+ Score
-While writing my [post about my Content-Security-Policy](https://caponte.io/blog/Content-Security-Policy/) I noticed that in my case get rid of
+While writing the [post about how I set my Content-Security-Policy](https://caponte.io/blog/Content-Security-Policy/) I noticed that in my case it was easy to get rid of the
 
 	unsafe-inline
 
-was not that difficult and after doing these changes my website's grade became "A+".
+And after doing these changes my website's grade became "A+".
 
 ![new_score](/resources/images/posts/http-security-headers/new_score.png)
 <figcaption align = "center">New "A+" score.</figcaption>
