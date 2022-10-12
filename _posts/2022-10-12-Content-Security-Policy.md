@@ -2,7 +2,7 @@
 layout: post
 title: "Configuring the Content-Security-Policy (CSP) Header"
 image: /resources/images/posts/content-security-policy/cover.png
-summary: Setting up the Content-Security-Policy (CSP) requires a fine-tuned configuration to allow or block the loading of resources. Here, I cover my approach to set my CSP and the reasoning behind some of my choices.
+description: Setting up the Content-Security-Policy (CSP) requires a fine-tuned configuration to allow or block the loading of resources. Here, I cover my approach to set my CSP and the reasoning behind some of my choices.
 author: Carlos Aponte
 date: 2022-10-12 00:00:00
 tags: ["AppSec", "CSP", "HTTP-Headers"]
