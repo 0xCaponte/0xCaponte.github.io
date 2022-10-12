@@ -80,10 +80,10 @@ As my site is static and I am not likely to make changes to any of these resourc
 
 	script-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-4ZPsBzAj9gP0zFvccWBCEa3czx2vtHZiNMmXaNl8CTs=' https://www.googletagmanager.com/gtag/js;
 
-	style-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 
+	style-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-cvSpgqcvrX5FXBN95EEaqOipPecSDs2cmymOp7JgmH8='
 
 
-### 5. Reporting of CSP Violations
+### 5. Reporting CSP Violations
 
 To set up reporting I had to:
 
@@ -108,15 +108,13 @@ To handle these reports I am using [report-uri.com](https://report-uri.com/produ
 <figcaption align = "center">Example CSP Reports.</figcaption>
 
 
-
-
 ## Final CSP
 
 These previous steps took care of all violations so I went ahead and changed the report header for the active Content-Security-Policy, which resulted on:
 
 	default-src 'self';
 	script-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-4ZPsBzAj9gP0zFvccWBCEa3czx2vtHZiNMmXaNl8CTs=' https://www.googletagmanager.com/gtag/js;
-	style-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' https://fonts.googleapis.com/css;
+	style-src 'report-sample' 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-cvSpgqcvrX5FXBN95EEaqOipPecSDs2cmymOp7JgmH8=' https://fonts.googleapis.com/css;
 	connect-src 'self' https://region1.google-analytics.com/g/collect;
 	font-src 'self' https://fonts.gstatic.com/s/lato/;
 	base-uri 'self';
