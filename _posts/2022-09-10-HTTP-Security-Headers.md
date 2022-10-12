@@ -2,7 +2,7 @@
 layout: post
 title: "Setting HTTP Security Headers With Cloudflare"
 image: /resources/images/posts/http-security-headers/cover.png
-summary: GitHub Pages offers free hosting for static sites; however, it doesn't provide any way to control the HTTP headers. This limitation directly affects multiple configuration options, and opens the door to potential vulnerabilities. With that in mind, I decided to work around it and add extra security to my website by using Cloudflare’s to control my HTTP Security Headers.
+description: GitHub Pages offers free hosting for static sites; however, it doesn't provide any way to control the HTTP headers. This limitation directly affects multiple configuration options, and opens the door to potential vulnerabilities. With that in mind, I decided to work around it and add extra security to my website by using Cloudflare’s to control my HTTP Security Headers.
 author: Carlos Aponte
 date: 2022-09-10 00:00:00
 tags: ["AppSec", "Cloudflare", "HSTS", "HTTP-Headers"]
