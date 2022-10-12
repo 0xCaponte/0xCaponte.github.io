@@ -2,7 +2,7 @@
 layout: post
 title: "Setting HTTP Security Headers With Cloudflare"
 image: /resources/images/posts/http-security-headers/cover.png
-summary: GitHub Pages offers free hosting for static sites; however, it doesn't provide any way to control the HTTP headers. This limitation directly affects multiple configuration options, and opens the door to potential vulnerabilities. With that in mind, I decided to work around it and add extra security to my website by using Cloudflare’s free tier service to control and set my HTTP Security Headers.
+summary: GitHub Pages offers free hosting for static sites; however, it doesn't provide any way to control the HTTP headers. This limitation directly affects multiple configuration options, and opens the door to potential vulnerabilities. With that in mind, I decided to work around it and add extra security to my website by using Cloudflare’s to control my HTTP Security Headers.
 author: Carlos Aponte
 date: 2022-09-10 00:00:00
 tags: ["AppSec", "Cloudflare", "HSTS", "HTTP-Headers"]
@@ -116,7 +116,7 @@ This could make sense or be problematic depending on your use cases. In my case,
 
 This header controls what sources can be loaded on the website and which ones can not. In practice, this means that a misconfiguration on the side of too strict a policy can break the website's functionalities, while a too flexible configuration can open the door to XSS vulnerabilities. 
 
-This level of detailed configuration is what made it the most complicated header to set and I decided to describe my approach in a future post about Content-Security-Policy. 
+This level of detailed configuration is what made it the most complicated header to set and I decided to describe my approach on [a separe post about Content-Security-Policy](https://caponte.io/blog/Content-Security-Policy/). 
 
 ### Final Transform Rule and Score
 Having explained these five specific cases, here is the final transform rule that was created:
@@ -130,7 +130,7 @@ After activating the transform rule retesting the website finally gave an "A" sc
 ![score_final](/resources/images/posts/http-security-headers/score_final.png)
 <figcaption align = "center">Final "A" score.</figcaption>
 
-An "A" grade is as good as reasonably possible. In theory there is the "A+" grade, but not even the [testing website](https://securityheaders.com), [Black Hills](blackhillsinfosec.com/) or [OWASP](owasp.org/) reach it. The reason, as mentioned before, is that it is not easy to achieve an air-tight Content-Security-Policy that does not rely on: 
+While in theory there is the "A+" grade, "A" is a pretty good one too, as even the [testing website](https://securityheaders.com), [Black Hills](blackhillsinfosec.com/) or [OWASP](owasp.org/) don't reach "A+". The reason, as mentioned before, is that it is not easy to achieve an air-tight Content-Security-Policy that does not rely on: 
 	
 	unsafe-inline
 	
@@ -152,3 +152,16 @@ you will see that there is already a pre-defined rule that addresses security he
 **- Hosting Alternatives**
 
 Some other free hosting providers like [Netlify](https://www.netlify.com/) or even [Cloudflare Pages](https://pages.cloudflare.com/) allow you to take control over the HTTP headers through the **_headers** file. This would have been another interesting approach but as I am happy with hosting my website on GitHub Pages, I didn't look further into this.
+
+
+## Edits
+
+### 12.10.2022 - New A+ Score
+While writing my [post about my Content-Security-Policy](https://caponte.io/blog/Content-Security-Policy/) I noticed that in my case get rid of
+
+	unsafe-inline
+
+was not that difficult and after doing these changes my website's grade became "A+".
+
+![new_score](/resources/images/posts/http-security-headers/new_score.png)
+<figcaption align = "center">New "A+" score.</figcaption>
