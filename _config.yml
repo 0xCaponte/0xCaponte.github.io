@@ -290,6 +290,7 @@ portfolios:
     client: IT Security Solutions C.A.
     date: 2015 - 2017
     preview-image: /resources/images/projects/pagomovil/preview.png
+    more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-mobile-payment
     mini-description: P2P Instant Payment App (iOS & Backend)
     description: >-
       iOS App for the interbank mobile payment system (P2P) of two major banks in Venezuela, 
@@ -365,6 +366,7 @@ portfolios:
     client: IT Security Solutions C.A.
     date: 2015
     preview-image: /resources/images/projects/samf/preview.png
+    more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-token-mobile
     mini-description: OTP Generator (iOS & Core Library)
     description: >-
       The development encompassed the server's core functionality as well as the iOS app of a 2nd factor authentication solution. The solution 
