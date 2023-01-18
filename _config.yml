@@ -38,8 +38,6 @@ url: https://caponte.io # the base hostname & protocol for your site, e.g. http:
 encoding: UTF-8
 
 # jekyll paginate
-# Outputting
-permalink: /blog/:categories/:title/
 paginate: 3 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
