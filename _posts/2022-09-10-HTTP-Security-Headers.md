@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setting HTTP Security Headers With Cloudflare"
-image: /resources/images/posts/http-security-headers/cover.png
+image: /resources/images/posts/http-security-headers/cover.webp
 description: GitHub Pages offers free hosting for static sites; however, it doesn't provide any way to control the HTTP headers. This limitation directly affects multiple configuration options, and opens the door to potential vulnerabilities. With that in mind, I decided to work around it and add extra security to my website by using Cloudflare’s to control my HTTP Security Headers.
 author: Carlos Aponte
 date: 2022-09-10 00:00:00
@@ -19,7 +19,7 @@ The approach, tools, and configurations presented in this post can also be taken
 For this, the main references were: [OWASP’s Secure Headers Project](https://owasp.org/www-project-secure-headers), [Mozilla's MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers), and [Tanya Janca's book Alice And Bob Learn Application Security](https://shehackspurple.ca/books/). Parallel to this, the way to measure progress was to test the website after each significant change using [Scott Helme’s security headers tests](https://securityheaders.com).
 
 
-![score_baseline](/resources/images/posts/http-security-headers/score_baseline.png)
+![score_baseline](/resources/images/posts/http-security-headers/score_baseline.webp)
 <figcaption align = "center">Baseline - "F" score after fresh GitHub + Cloudflare deployment.</figcaption>
 
 
@@ -53,13 +53,13 @@ Two comments about these two last points in the HSTS settings:
 
 
 
-![hsts_final_configuration](/resources/images/posts/http-security-headers/hsts_final_configuration.png)
+![hsts_final_configuration](/resources/images/posts/http-security-headers/hsts_final_configuration.webp)
 <figcaption align = "center">Final HSTS configuration.</figcaption>
 
 
 As we can see, with these two HTTPS changes retesting of the website already gave an improved score.
 
-![score_hsts](/resources/images/posts/http-security-headers/score_hsts.png)
+![score_hsts](/resources/images/posts/http-security-headers/score_hsts.webp)
 <figcaption align = "center">"D" Score after HSTS configuration.</figcaption>
 
 ### 2 - Transform Rules For The Security Headers
@@ -72,12 +72,12 @@ In Cloudflare, go to:
 
 All HTTP Security Headers are to be changed in one Transform Rule, one that changes response headers.
 
-![create_transform_rules](/resources/images/posts/http-security-headers/create_transform_rules.png)
+![create_transform_rules](/resources/images/posts/http-security-headers/create_transform_rules.webp)
 <figcaption align = "center">Creating a Transform Rule to change response headers.</figcaption>
 
 Inside the rule definition give it a name and specify how to match the responses that it should be applied to. In this case, I wanted to secure all responses, so the broad criteria of matching all responses that contain the website's hostname was enough.
 
-![rule_name_and_match](/resources/images/posts/http-security-headers/rule_name_and_match.png)
+![rule_name_and_match](/resources/images/posts/http-security-headers/rule_name_and_match.webp)
 <figcaption align = "center">Matching transform rule.</figcaption>
 
 Having taken care of that I created a new **Set Static** rule for each header to be set or changed. As mentioned at the beginning, I retested the website as I was setting each header, which allowed me to see how the score slowly improved with each change.
@@ -121,13 +121,13 @@ This level of detailed configuration is what made it the most complicated header
 ### Final Transform Rule and Score
 Having explained these five specific cases, here is the final transform rule that was created:
 
-![rule_final](/resources/images/posts/http-security-headers/rule_final.png)
+![rule_final](/resources/images/posts/http-security-headers/rule_final.webp)
 <figcaption align = "center">Final transform rule.</figcaption>
 
 
 After activating the transform rule retesting the website finally gave an "A" score.
 
-![score_final](/resources/images/posts/http-security-headers/score_final.png)
+![score_final](/resources/images/posts/http-security-headers/score_final.webp)
 <figcaption align = "center">Final "A" score.</figcaption>
 
 While in theory there is the "A+" grade, "A" is a pretty good one too, as even the [testing website](https://securityheaders.com), [Black Hills](blackhillsinfosec.com/) or [OWASP](owasp.org/) don't reach "A+". The reason, as mentioned before, is that it is not easy to achieve an air-tight Content-Security-Policy that does not rely on: 
@@ -163,5 +163,5 @@ While writing the [post about how I set my Content-Security-Policy](https://capo
 
 And after doing these changes my website's grade became "A+".
 
-![new_score](/resources/images/posts/http-security-headers/new_score.png)
+![new_score](/resources/images/posts/http-security-headers/new_score.webp)
 <figcaption align = "center">New "A+" score.</figcaption>
