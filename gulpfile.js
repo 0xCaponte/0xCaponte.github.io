@@ -4,9 +4,8 @@ var cp = require('child_process');
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var browserSync = require('browser-sync').create();
 
-
 function jekyllBuild() {
-    return cp.spawn(jekyll, ['build'], { stdio: 'inherit' })
+    return cp.spawn('bundle', ['exec', jekyll, 'build'], { stdio: 'inherit' });
 }
 
 function browserSyncServe(done) {
@@ -14,7 +13,7 @@ function browserSyncServe(done) {
         server: {
             baseDir: "_site"
         }
-    })
+    });
     done();
 }
 
@@ -46,5 +45,5 @@ function watch() {
         gulp.series(jekyllBuild, browserSyncReload));
 }
 
-gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch))
-gulp.task('build', gulp.parallel(jekyllBuild))
+exports.default = gulp.series(gulp.parallel(jekyllBuild, browserSyncServe), watch);
+exports.build = jekyllBuild;

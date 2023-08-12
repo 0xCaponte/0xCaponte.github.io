@@ -40,7 +40,7 @@ encoding: UTF-8
 # jekyll paginate
 paginate: 3 # amount of posts to show
 paginate_path: /blog/page:num/
-timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Europe/Berlin" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 sort_field: "date"
 sort_reverse: true
 
@@ -122,7 +122,7 @@ favicon: /resources/images/favicon.png
 # disqus_shortname: moscow-jekyll-theme #https://disqus.com/
 
 #analytics
-google_analytics: G-M7B4DN805P
+google_analytics: 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -394,8 +394,6 @@ portfolios:
         source: /resources/images/projects/nagiosAlert/nagioslAlert-3.png
       - type: "image"
         source: /resources/images/projects/nagiosAlert/nagioslAlert-4.png
-      - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-5.png
 
 
 # Blog page
