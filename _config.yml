@@ -116,7 +116,7 @@ defaults:
 version: dark
 
 # favicon
-favicon: /resources/images/favicon.png
+favicon: /resources/images/favicon.webp
 
 # Disqus is a global comment system
 # disqus_shortname: moscow-jekyll-theme #https://disqus.com/
@@ -164,7 +164,7 @@ about:
   section-tagline: "Me"
   description: >-
     Developer and CyberSec Enthusiast. Interested in technological innovation, 
-    language learning, outdoor sports, reading and gaming.
+    language learning, outdoor sports, reading and gaming. Currently exploring indie hacking and building in public.
   name: Carlos Aponte
   freelance: Available
   address: "Hamburg, Germany"
@@ -287,7 +287,7 @@ portfolios:
     technologies: iOS, Swift, Objective-C, X-Code, OpenSSL
     client: IT Security Solutions C.A.
     date: 2015 - 2017
-    preview-image: /resources/images/projects/pagomovil/preview.png
+    preview-image: /resources/images/projects/pagomovil/preview.webp
     more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-mobile-payment
     mini-description: P2P Instant Payment App (iOS & Backend)
     description: >-
@@ -303,7 +303,7 @@ portfolios:
     technologies: iOS, Swift, AWS Lambda, AWS API Gateway, AWS DynamoDB
     client: ComeWith Inc
     date: 2016 - 2017
-    preview-image: /resources/images/projects/okappi/preview.png
+    preview-image: /resources/images/projects/okappi/preview.webp
     more-info-url: https://www.alanherman.me/#/okappi-app/
     mini-description: Community-Based Social Network (iOS & Serverless)
     description: >-
@@ -318,7 +318,7 @@ portfolios:
     technologies: iOS, PHP, Swift, X-Code
     client: Kiwi LLC
     date: 2016 - 2017
-    preview-image: /resources/images/projects/laboralerts/preview.png
+    preview-image: /resources/images/projects/laboralerts/preview.webp
     more-info-url: http://laboralerts.com/
     mini-description: Employment Market Tracker (iOS)
     description: >-
@@ -328,25 +328,25 @@ portfolios:
       layoffs, together with both graphical and table representations of this data.
     content:
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-1.png
+        source: /resources/images/projects/laboralerts/la-1.webp
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-2.png 
+        source: /resources/images/projects/laboralerts/la-2.webp 
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-3.png    
+        source: /resources/images/projects/laboralerts/la-3.webp    
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-4.png
+        source: /resources/images/projects/laboralerts/la-4.webp
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-5.png
+        source: /resources/images/projects/laboralerts/la-5.webp
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-6.png
+        source: /resources/images/projects/laboralerts/la-6.webp
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-7.png
+        source: /resources/images/projects/laboralerts/la-7.webp
 
   - title: Movida Chacao
     technologies: Android, Android Studio, Java, Wikitude
     client: Reto Chacao - App Challenge
     date: 2015
-    preview-image: /resources/images/projects/movidachacao/preview.png
+    preview-image: /resources/images/projects/movidachacao/preview.webp
     more-info-url: https://github.com/ur3k/MovidaChacao
     mini-description: Cultural Social Network (Android)
     description: >-
@@ -363,7 +363,7 @@ portfolios:
     technologies: iOS, C, Objective-C, OpenSSL, Valgrind
     client: IT Security Solutions C.A.
     date: 2015
-    preview-image: /resources/images/projects/samf/preview.png
+    preview-image: /resources/images/projects/samf/preview.webp
     more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-token-mobile
     mini-description: OTP Generator (iOS & Core Library)
     description: >-
@@ -377,7 +377,7 @@ portfolios:
     technologies: Android, Java, Nagios
     client: Simon Bolivar University
     date: 2015
-    preview-image: /resources/images/projects/nagiosAlert/preview.png
+    preview-image: /resources/images/projects/nagiosAlert/preview.webp
     more-info-url: https://github.com/ur3k/NagiosAlert
     mini-description: Nagios Monitoring App (Android)
     description: >-
@@ -387,13 +387,13 @@ portfolios:
       the server.
     content:
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-1.png
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-1.webp
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-2.png
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-2.webp
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-3.png
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-3.webp
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-4.png
+        source: /resources/images/projects/nagiosAlert/nagioslAlert-4.webp
 
 
 # Blog page
@@ -412,8 +412,8 @@ blog:
 #################
 
 author: Carlos Aponte
-og_image: /resources/images/profile.png
-image: /resources/images/profile.png
+og_image: /resources/images/profile.webp
+image: /resources/images/profile.webp
 
 twitter:
   username: 0xCaponte
