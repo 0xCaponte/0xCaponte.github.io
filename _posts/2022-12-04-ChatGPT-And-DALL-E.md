@@ -5,7 +5,7 @@ image: /resources/images/posts/ChatGPT-And-DALL-E/cover.webp
 description: "I asked ChatGPT to write some descriptions of itself, and then passed those descriptions to DALL-E to see what visual representations would be generated. The results: a healthy amount of self-esteem, classic AI-Robots and a couple of cats."
 author: Carlos Aponte
 date: 2022-12-04 00:00:00
-tags: ["Experiment", "AI", "NLP", "What if?"]
+tags: ["Experiment", "AI", "What if?"]
 ---
 
 <!-- # What image does ChatGPT have of itself? Featuring: DALL-E -->

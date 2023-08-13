@@ -36,7 +36,7 @@ Afterwards, on the EC2 console, we can fine tune the specs of the machine we are
 
 - **Network and Firewall Configuration**: I did not do anything here but you can change this to fit your requirements.
 
-And that is that for the general setup. The instance will be created and initialized, and we can go the EC2 Console to see its detailed information, including the machine's  **IP addresses** and **Public IPv4 DNS** . This URL will look something like https://ec2-3-9-2-6.compute-1.amazonaws.com/ and when we open it in our browser, we should be greeted with a prompt like this (the default credentials are found in [Bitnami's documentation](https://docs.bitnami.com/aws/apps/matomo/get-started/first-steps/)).
+And that is that for the general setup. The instance will be created and initialized, and we can go the EC2 Console to see its detailed information, including the machine's  **IP addresses** and **Public IPv4 DNS** . This URL will look something like https://ec2-3-9-2-6.compute-1.amazonaws.com/ and when we open it in our browser, we should be greeted with a prompt like this (the default credentials are found in [Bitnami's documentation](https://docs.bitnami.com/aws/apps/matomo/get-started/first-steps/).
 
 ![matomo_login](/resources/images/posts/matomo-analytics-free/matomo_login.webp)
 <figcaption align = "center">Matomo Login.</figcaption>
