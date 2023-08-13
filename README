@@ -1,0 +1,19 @@
+
+
+Jekyll
+-------------------------------
+  
+  https://jekyllrb.com/docs/installation/
+
+Gulp
+--------------------------------
+  
+  npm install 
+  npm install --global gulp-cli
+  npm install --save-dev gulp gulp-sass gulp-clean-css gulp-uglify gulp-imagemin browser-sync
+
+
+
+Dev Deployment
+--------------------------------
+

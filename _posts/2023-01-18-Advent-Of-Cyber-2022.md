@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Take on Advent of Cyber 2022 - 24 Days of Cybersecurity"
-image: /resources/images/posts/advent-of-cyber-2022/cover.png
+image: /resources/images/posts/advent-of-cyber-2022/cover.webp
 description: "It has been a couple of weeks since Advent of Cyber 2022 ended. However, I still wanted to write a short review of my experience as a first-timer and the challenges that I enjoyed the most. Overall, a great learning, hands-on, and beginner-friendly experience covering multiple areas of cybersecurity."
 author: Carlos Aponte
 date: 2023-01-18 00:00:00

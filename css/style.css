@@ -71,6 +71,7 @@ body {
     font-weight: 400;
 }
 
+
 .second-font {
     font-family: 'Lato', sans-serif;
 }
@@ -181,7 +182,7 @@ body {
 }
 
 .main-picture.profile {
-    background-image: url('/resources/images/profile.png');
+    background-image: url('/resources/images/profile.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -307,8 +308,13 @@ body.dark .bl-main>section:nth-child(4).bl-expand .contact .rightside .input-fie
     border-bottom: 1px solid #666;
 }
 
+
 body.dark div.bl-panel-items>div>div hr {
     background: #333;
+}
+
+.blog-figure {
+    background-color: #fff;
 }
 
 body.blog.dark p,
@@ -727,7 +733,7 @@ section.bl-expand .bl-icon-close {
 }
 
 .bl-main>section.topleft.profile {
-    background-image: url('/resources/images/profile.png');
+    background-image: url('/resources/images/profile.webp');
 }
 
 .bl-main>section.topleft:before {

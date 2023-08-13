@@ -32,7 +32,7 @@
             <div class="row">
                 <!-- Picture Starts -->
                 <div class="profile-picture show-on-medium-and-down center-align">
-                    <img src="/resources/images/profile.png" class="responsive-img my-picture" alt="My Photo" />
+                    <img src="/resources/images/profile.webp" class="responsive-img my-picture" alt="My Photo" />
                 </div>
                 <!-- Picture Ends -->
                 <div class="col s12 m12 l12 xl12 personal-info section-padding">
@@ -70,17 +70,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row s12 m12 l12 xl12">
-                        <div class="col s12 m6 l6 xl6 justified-center about-button">
-                            <a href="{{site.about.cv-download-link}}" class="btn font-weight-700">
-                                {{ site.about.cv-download-text}} <i class="fa fa-file-pdf-o"></i>
-                            </a>
-                        </div>
-                        <div class="col s12 m6 l6 xl6 justified-center about-button">
-                            <a href="{{ 'blog' | relative_url }}" class="btn font-weight-700">
-                                My Blog <i class="fa fa-edit"></i>
-                            </a>
-                        </div>
+                    <div class="row s6 m6 l6 xl6 justified-center about-button">
+                        <a href="{{ 'blog' | relative_url }}" class="btn font-weight-700">
+                            My Blog <i class="fa fa-edit"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,5 +110,5 @@
     </div>
     <!-- End Expanded About -->
 
-    <img alt="close" src="{{'/resources/images/close-button.png' |relative_url}}" class="bl-icon-close" />
+    <img alt="close" src="{{'/resources/images/close-button.webp' |relative_url}}" class="bl-icon-close" />
 </section>
