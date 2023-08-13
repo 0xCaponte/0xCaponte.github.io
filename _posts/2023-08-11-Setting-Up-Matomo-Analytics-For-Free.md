@@ -36,10 +36,7 @@ Afterwards, on the EC2 console, we can fine tune the specs of the machine we are
 
 - **Network and Firewall Configuration**: I did not do anything here but you can change this to fit your requirements.
 
-And that is that for the general setup. The instance will be created and initialized, and we can go the EC2 Console to see its detailed information, including the machine's  **IP addresses** and **Public IPv4 DNS** . This URL will look something like https://ec2-3-9-2-6.compute-1.amazonaws.com/ and when we open it in our browser, we should be greeted with a prompt like this (the default credentials are found in [Bitnami's documentation](https://docs.bitnami.com/aws/apps/matomo/get-started/first-steps/).
-
-![matomo_login](/resources/images/posts/matomo-analytics-free/matomo_login.webp)
-<figcaption align = "center">Matomo Login.</figcaption>
+And that is that for the general setup. The instance will be created and initialized, and we can go the EC2 Console to see its detailed information, including the machine's  **IP addresses** and **Public IPv4 DNS** . This URL will look something like https://ec2-3-9-2-6.compute-1.amazonaws.com/ and when we open it in our browser, we should be greeted with Matomo's Log In prompt, for which the default credentials can be found in [Bitnami's documentation](https://docs.bitnami.com/aws/apps/matomo/get-started/first-steps/).
 
 ## 2. Next Steps:
 
@@ -66,5 +63,5 @@ At the beginning I mentioned that I wanted to have cookieless analytics, this ho
 - [Privacy Settings in Matomo](https://matomo.org/faq/general/configure-privacy-settings-in-matomo/)
 
 ### 2.4 - Bitnami Documentation:
-Bitnami offers [extra documentation](https://docs.Bitnami.com/aws/apps/matomo/) on how to configure your instance, your Matomo server, Apache and so on. All that I needed was found there, so have a look at it.
+[Bitnami offers extra documentation](https://docs.Bitnami.com/aws/apps/matomo/) on how to configure your instance, your Matomo server, Apache and so on. All that I needed was found there, so have a look at it.
 	
