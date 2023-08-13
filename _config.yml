@@ -180,7 +180,7 @@ about:
   boxesStarts:
     - description: "GitHub"
       icon: fa fa-github
-      link: https://github.com/ur3k
+      link: https://github.com/0xCaponte
 
     - description: "LinkedIn"
       icon: fa fa-linkedin
@@ -347,7 +347,7 @@ portfolios:
     client: Reto Chacao - App Challenge
     date: 2015
     preview-image: /resources/images/projects/movidachacao/preview.webp
-    more-info-url: https://github.com/ur3k/MovidaChacao
+    more-info-url: https://github.com/0xCaponte/MovidaChacao
     mini-description: Cultural Social Network (Android)
     description: >-
       Movida Chacao was a virtual guide for cultural and sport related events and places of interest. It was created for the 
@@ -378,7 +378,7 @@ portfolios:
     client: Simon Bolivar University
     date: 2015
     preview-image: /resources/images/projects/nagiosAlert/preview.webp
-    more-info-url: https://github.com/ur3k/NagiosAlert
+    more-info-url: https://github.com/0xCaponte/NagiosAlert
     mini-description: Nagios Monitoring App (Android)
     description: >-
       An Android application and its backend servlet developed as a class project at 
@@ -422,7 +422,7 @@ twitter:
 social:
   name: Carlos Aponte
   links:
-    - https://github.com/ur3k
+    - https://github.com/0xCaponte
     - https://www.linkedin.com/in/capontetoro/
     - https://stackoverflow.com/users/1270603
     - https://twitter.com/0xCaponte
