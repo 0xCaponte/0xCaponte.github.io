@@ -44,16 +44,25 @@ timezone: "Europe/Berlin" # https://en.wikipedia.org/wiki/List_of_tz_database_ti
 sort_field: "date"
 sort_reverse: true
 
-#plugin
+#plugins
 plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-lazy-load-image
 
 # Feed
 feed:
   excerpt_only: true
+
+# Lazy Load Image
+# Ex: <img id="img1" class="lazyload" src="placeholder.jpg" data-src="actual-image.jpg">
+
+lazy_load_image:
+  src_attr_name: data-src # HTML tag for the real image to load
+  class_attr_values: 
+    - lazyload
 
 # Archives
 #  Type
@@ -339,8 +348,6 @@ portfolios:
         source: /resources/images/projects/laboralerts/la-5.webp
       - type: "image"
         source: /resources/images/projects/laboralerts/la-6.webp
-      - type: "image"
-        source: /resources/images/projects/laboralerts/la-7.webp
 
   - title: Movida Chacao
     technologies: Android, Android Studio, Java, Wikitude
@@ -392,8 +399,6 @@ portfolios:
         source: /resources/images/projects/nagiosAlert/nagioslAlert-2.webp
       - type: "image"
         source: /resources/images/projects/nagiosAlert/nagioslAlert-3.webp
-      - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-4.webp
 
 
 # Blog page
@@ -402,7 +407,7 @@ blog:
   section-tagline: "Blog"
   number-of-previews: 3
   description: >-
-    I write about what I learn, about the side projects that I am working on or about 
+    I write about what I learn, the side projects that I am working on or about 
     the ones that I decided to let go. Feel free to reach out if you have any comments, 
     corrections, or if you want to say hello.
 

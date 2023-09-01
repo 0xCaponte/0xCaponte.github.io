@@ -51,7 +51,7 @@
                                             <!-- Figure Starts -->
                                             <figure class="blog-figure">
                                                 <a href="{{post.url}}">
-                                                    <img class="responsive-img" src="{{ post.image }}" alt="{{post.title}} post">
+                                                    <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{ post.image }}" alt="{{post.title}} post">
                                                 </a>
                                             </figure>
                                             <!-- Figure Ends -->
@@ -99,5 +99,5 @@
         </div>
         <!-- Expanded Blog Ends -->
     </div>
-    <img alt="close" src=" /resources/images/close-button.webp" class="bl-icon-close" />
+    <img alt="close" src="/resources/images/placeholder.webp" data-src=" /resources/images/close-button.webp" class="bl-icon-close lazyload" />
 </section>

@@ -12,7 +12,7 @@
                 
                     {%- if content.type == 'youtube' -%}
                     <div id="video" class="videocontainer">
-                        <iframe class="youtube-video" src="{{ content.source }}"></iframe>
+                        <iframe class="youtube-video lazyload" src="/resources/images/placeholder.webp" data-src="{{ content.source }}"></iframe>
                     </div>
                     
                     {%- elsif content.type == 'video' -%}
@@ -21,7 +21,7 @@
                     </video>
                 
                     {%- else -%}
-                    <img class="responsive-img" src="{{ content.source | relative_url }}" alt="project" /> {%- endif -%}
+                    <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{ content.source | relative_url }}" alt="project" /> {%- endif -%}
                 
                 </a> {%- endfor -%}
 
@@ -61,7 +61,7 @@
         <!-- Previous Work Icon Ends -->
 
         <!-- Close Work Icon Starts -->
-        <img alt="close" src="{{ '/resources/images/close-button.webp' | relative_url }}" class="control-button bl-icon-close" />
+        <img alt="close" src="/resources/images/placeholder.webp" data-src="{{ '/resources/images/close-button.webp' | relative_url }}" class="lazyload control-button bl-icon-close" />
         <!-- Close Work Icon Ends -->
 
         <!-- Next Work Icon Starts -->

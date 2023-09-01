@@ -38,7 +38,7 @@
                 <!-- Project Starts -->
                 <div class="col s12 m6 l6 xl4" data-panel="panel-{{ forloop.index }}">
                     <a href="#">
-                        <img class="responsive-img" src="{{portfolio.preview-image | relative_url }}" alt="{{portfolio.title }}" />
+                        <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{portfolio.preview-image | relative_url }}" alt="{{portfolio.title }}" />
                         <div class="valign-wrapper"><span class="font-weight-700">{{ portfolio.mini-description }}</span></div>
                     </a>
 
@@ -50,6 +50,6 @@
         </div>
     </div>
     <!-- Portfolio Expanded Ends -->
-    <img alt="close" src="{{'/resources/images/close-button.webp' | relative_url }}" class="bl-icon-close" />
+    <img alt="close" src="/resources/images/placeholder.webp" data-src="{{'/resources/images/close-button.webp' | relative_url }}" class="bl-icon-close lazyload" />
 
 </section>
