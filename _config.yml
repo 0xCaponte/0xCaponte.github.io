@@ -305,7 +305,7 @@ portfolios:
       each interaction.
     content:
       - type: "video"
-        source: /resources/videos/projects/pagomovil/p2p.mp4
+        source: https://caponte.io/projects/pagomovil/p2p.mp4
 
 
   - title: Okappi
@@ -321,7 +321,7 @@ portfolios:
       and participate in meaningful discussions.
     content:
       - type: "video"
-        source: /resources/videos/projects/okappi/flow.mp4
+        source: https://caponte.io/projects/okappi/flow.mp4
 
   - title: Labor Alerts
     technologies: iOS, PHP, Swift, X-Code
@@ -364,7 +364,7 @@ portfolios:
       and a AR function to see what event was happening at a given time on a specific place or direction.
     content:
       - type: "video"
-        source: /resources/videos/projects/movidachacao/mc.mp4
+        source: https://caponte.io/projects/movidachacao/mc.mp4
 
   - title: SAMF OTP Generator
     technologies: iOS, C, Objective-C, OpenSSL, Valgrind
@@ -378,7 +378,7 @@ portfolios:
       was based on the generation and validation of OTPs; it used synchronization time windows, time steps and interrelated generation seeds.
     content:
       - type: "video"
-        source: /resources/videos/projects/samf/samf.mp4
+        source: https://caponte.io/projects/samf/samf.mp4
 
   - title: Nagios Alert
     technologies: Android, Java, Nagios
