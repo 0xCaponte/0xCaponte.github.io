@@ -8,6 +8,11 @@ layout: compress
 {%- include head.html -%}
 
 <body class="{{page.pageClass}} {{ site.version }}">
+    
+    <!-- Non-Blicking CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ 'css/font-awesome.min.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ 'css/local-lato-fonts.css' | relative_url }}" />
+    
     <!-- Preloader Start -->
     {%- include preloader.html -%}
     <!-- Preloader Ends -->

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Setting Up Matomo Analytics on AWS EC-2 for Free"
-image: /resources/images/posts/matomo-analytics-free/cover.webp
+image: /resources/images/og-image.png
+cover: https://r2.caponte.io/resources/images/posts/matomo-analytics-free/cover.webp
 description: This post covers how to set up privacy oriented and cookieless Matomo website analytics for free. I cover the general process for AWS EC-2, but many of the considerations and recommendations also apply to Azure and GCP's Compute Engine.
 author: Carlos Aponte
 date: 2023-08-11 00:00:00
@@ -18,7 +19,7 @@ As they are open-source, we can host our own on-premise server for free, but the
 
 Looking for the easiest way to host my own analytics server I found that [Bitnami offers pre-built images of Matomo](https://Bitnami.com/stack/matomo), ready to be deployed on Azure, GCP or AWS.  After comparing the three options I decided to deploy on AWS because the needed EC2 instance falls under AWS Free Tier and would be free. Nonetheless, hosting on an equivalent server on GCP or Azure would cost around 4€, which might be worth it in the name of centralization or sticking to a platform that we know well.
 
-![bitnami_cloud_images](/resources/images/posts/matomo-analytics-free/bitnami_cloud_images.webp)
+![bitnami_cloud_images](https://r2.caponte.io/resources/images/posts/matomo-analytics-free/bitnami_cloud_images.webp)
 <figcaption align = "center">Bitnami Cloud Images.</figcaption>
 
 
@@ -53,7 +54,7 @@ So before we can get our final certificates, we need to first configure our DNS 
 
 To associate a subdomain to our EC2 IP we just need to go to our DNS provider and create the appropriate CNAME or A Records. Here it is important that we create records for our regular address "analytics.example.com" and also for our "www" prefix one, "www.analytics.example.com". Otherwise, we might have issues when creating our certificates are treated as different entities even when they point to the same resource.
 
-![dns_records](/resources/images/posts/matomo-analytics-free/dns_records.webp)
+![dns_records](https://r2.caponte.io/resources/images/posts/matomo-analytics-free/dns_records.webp)
 <figcaption align = "center">DNS Records for EC2 Instance.</figcaption>
 
 ### 2.3 - Cookieless Analytics:

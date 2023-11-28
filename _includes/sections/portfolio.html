@@ -8,7 +8,7 @@
 
                 <!-- Project Main Content Starts -->
                 {%- for content in portfolio.content -%}
-                <a class="carousel-item valign-wrapper">
+                <div class="carousel-item valign-wrapper">
                 
                     {%- if content.type == 'youtube' -%}
                     <div id="video" class="videocontainer">
@@ -23,7 +23,7 @@
                     {%- else -%}
                     <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{ content.source | relative_url }}" alt="project" /> {%- endif -%}
                 
-                </a> {%- endfor -%}
+                </div> {%- endfor -%}
 
             </div>
             <!-- Main Project Content Ends -->

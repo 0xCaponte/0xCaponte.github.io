@@ -37,11 +37,8 @@
                 {%- for portfolio in site.portfolios -%}
                 <!-- Project Starts -->
                 <div class="col s12 m6 l6 xl4" data-panel="panel-{{ forloop.index }}">
-                    <a href="#">
-                        <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{portfolio.preview-image | relative_url }}" alt="{{portfolio.title }}" />
-                        <div class="valign-wrapper"><span class="font-weight-700">{{ portfolio.mini-description }}</span></div>
-                    </a>
-
+                    <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{portfolio.preview-image | relative_url }}" alt="{{portfolio.title }}" />
+                    <div class="valign-wrapper"><span class="font-weight-700">{{ portfolio.mini-description }}</span></div>
                     <span clas="second-font">{{ portfolio.title }}</span>
                 </div>
                 <!-- Project Ends -->

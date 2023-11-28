@@ -46,12 +46,12 @@
                                 {%- for post in site.posts limit: site.blog.number-of-previews -%}
                                 <!-- Articles Starts -->
                                 <div class="col s12 m6 l6 xl4" data-panel="panel-{{ forloop.index }}">
-                                    <a href="#">
+                                    <div>
                                         <article>
                                             <!-- Figure Starts -->
                                             <figure class="blog-figure">
                                                 <a href="{{post.url}}">
-                                                    <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{ post.image }}" alt="{{post.title}} post">
+                                                    <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{ post.cover }}" alt="{{post.title}} post">
                                                 </a>
                                             </figure>
                                             <!-- Figure Ends -->
@@ -80,7 +80,7 @@
                                             </div>
                                             <!-- Excerpt Ends -->
                                         </article>
-                                    </a>
+                                    </div>
                                 </div>
                                 <!-- Articels Ends -->
                                 {%- endfor -%}

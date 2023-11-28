@@ -51,6 +51,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-lazy-load-image
+  - jekyll-purgecss
 
 # Feed
 feed:
@@ -296,7 +297,7 @@ portfolios:
     technologies: iOS, Swift, Objective-C, X-Code, OpenSSL
     client: IT Security Solutions C.A.
     date: 2015 - 2017
-    preview-image: /resources/images/projects/pagomovil/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/pagomovil/preview.webp
     more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-mobile-payment
     mini-description: P2P Instant Payment App (iOS & Backend)
     description: >-
@@ -305,14 +306,14 @@ portfolios:
       each interaction.
     content:
       - type: "video"
-        source: https://r2.caponte.io/projects/pagomovil/p2p.mp4
+        source: https://r2.caponte.io/resources/videos/projects/pagomovil/p2p.mp4
 
 
   - title: Okappi
     technologies: iOS, Swift, AWS Lambda, AWS API Gateway, AWS DynamoDB
     client: ComeWith Inc
     date: 2016 - 2017
-    preview-image: /resources/images/projects/okappi/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/okappi/preview.webp
     more-info-url: https://www.alanherman.me/#/okappi-app/
     mini-description: Community-Based Social Network (iOS & Serverless)
     description: >-
@@ -321,13 +322,13 @@ portfolios:
       and participate in meaningful discussions.
     content:
       - type: "video"
-        source: https://r2.caponte.io/projects/okappi/flow.mp4
+        source: https://r2.caponte.io/resources/videos/projects/okappi/flow.mp4
 
   - title: Labor Alerts
     technologies: iOS, PHP, Swift, X-Code
     client: Kiwi LLC
     date: 2016 - 2017
-    preview-image: /resources/images/projects/laboralerts/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/laboralerts/preview.webp
     more-info-url: http://laboralerts.com/
     mini-description: Employment Market Tracker (iOS)
     description: >-
@@ -337,23 +338,19 @@ portfolios:
       layoffs, together with both graphical and table representations of this data.
     content:
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-1.webp
+        source: https://r2.caponte.io/resources/images/projects/laboralerts/la-1.webp
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-2.webp 
+        source: https://r2.caponte.io/resources/images/projects/laboralerts/la-2.webp 
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-3.webp    
+        source: https://r2.caponte.io/resources/images/projects/laboralerts/la-3.webp    
       - type: "image"
-        source: /resources/images/projects/laboralerts/la-4.webp
-      - type: "image"
-        source: /resources/images/projects/laboralerts/la-5.webp
-      - type: "image"
-        source: /resources/images/projects/laboralerts/la-6.webp
-
+        source: https://r2.caponte.io/resources/images/projects/laboralerts/la-4.webp
+    
   - title: Movida Chacao
     technologies: Android, Android Studio, Java, Wikitude
     client: Reto Chacao - App Challenge
     date: 2015
-    preview-image: /resources/images/projects/movidachacao/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/movidachacao/preview.webp
     more-info-url: https://github.com/0xCaponte/MovidaChacao
     mini-description: Cultural Social Network (Android)
     description: >-
@@ -364,13 +361,13 @@ portfolios:
       and a AR function to see what event was happening at a given time on a specific place or direction.
     content:
       - type: "video"
-        source: https://r2.caponte.io/projects/movidachacao/mc.mp4
+        source: https://r2.caponte.io/resources/videos/projects/movidachacao/mc.mp4
 
   - title: SAMF OTP Generator
     technologies: iOS, C, Objective-C, OpenSSL, Valgrind
     client: IT Security Solutions C.A.
     date: 2015
-    preview-image: /resources/images/projects/samf/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/samf/preview.webp
     more-info-url: https://www.itssca.net/negocios/solutions%20portfolio/samf-token-mobile
     mini-description: OTP Generator (iOS & Core Library)
     description: >-
@@ -378,13 +375,13 @@ portfolios:
       was based on the generation and validation of OTPs; it used synchronization time windows, time steps and interrelated generation seeds.
     content:
       - type: "video"
-        source: https://r2.caponte.io/projects/samf/samf.mp4
+        source: https://r2.caponte.io/resources/videos/projects/samf/samf.mp4
 
   - title: Nagios Alert
     technologies: Android, Java, Nagios
     client: Simon Bolivar University
     date: 2015
-    preview-image: /resources/images/projects/nagiosAlert/preview.webp
+    preview-image: https://r2.caponte.io/resources/images/projects/nagiosAlert/preview.webp
     more-info-url: https://github.com/0xCaponte/NagiosAlert
     mini-description: Nagios Monitoring App (Android)
     description: >-
@@ -394,11 +391,11 @@ portfolios:
       the server.
     content:
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-1.webp
+        source: https://r2.caponte.io/resources/images/projects/nagiosAlert/nagioslAlert-1.webp
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-2.webp
+        source: https://r2.caponte.io/resources/images/projects/nagiosAlert/nagioslAlert-2.webp
       - type: "image"
-        source: /resources/images/projects/nagiosAlert/nagioslAlert-3.webp
+        source: https://r2.caponte.io/resources/images/projects/nagiosAlert/nagioslAlert-3.webp
 
 
 # Blog page
@@ -411,18 +408,29 @@ blog:
     the ones that I decided to let go. Feel free to reach out if you have any comments, 
     corrections, or if you want to say hello.
 
- 
+#################
+#  SASS
+#################
+sass:
+  style: compressed
+
+#################
+#  Purge CSS
+#################
+css_dir: "/css"
+
 #################
 #  SEO Tags
 #################
 
 author: Carlos Aponte
-og_image: /resources/images/profile.webp
-image: /resources/images/profile.webp
+og_image: /resources/images/og-image.png
+image: /resources/images/og-image.png
 
 twitter:
   username: 0xCaponte
   card: summary
+  image: /resources/images/og-image.png
 
 social:
   name: Carlos Aponte

@@ -39,7 +39,7 @@ title: Blog | Moscow - Personal Portfolio
                         <!-- Figure Starts -->
                         <figure class="blog-figure" style="background-color: white;">
                             <a href="{{post.url}}">
-                                <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{post.image }}" alt="{{post.title}} post">
+                                <img class="responsive-img lazyload" src="/resources/images/placeholder.webp" data-src="{{post.cover }}" alt="{{post.title}} post">
                             </a>
                         </figure>
                         <!-- Figure Ends -->
@@ -52,7 +52,7 @@ title: Blog | Moscow - Personal Portfolio
                             </a>
                             <!-- Meta Starts -->
                             <div class="meta second-font">
-                                <span><i class="fa fa-user"></i> <a href="#">{{post.author}}</a></span>
+                                <span><i class="fa fa-user"></i>{{post.author}}</span>
                                 <span class="date"><i class="fa fa-calendar"></i> {{page.date | date_to_string}}</span>
                                 <span>
                                     <i class="fa fa-tags"></i> 

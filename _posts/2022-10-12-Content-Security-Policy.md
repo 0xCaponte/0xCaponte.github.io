@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Configuring the Content-Security-Policy (CSP) Header"
-image: /resources/images/posts/content-security-policy/cover.webp
+image: /resources/images/og-image.png
+cover: https://r2.caponte.io/resources/images/posts/content-security-policy/cover.webp
 description: Setting up the Content-Security-Policy (CSP) requires a fine-tuned configuration to allow or block the loading of resources. Here, I cover my approach to set my CSP and the reasoning behind some of my choices.
 author: Carlos Aponte
 date: 2022-10-12 00:00:00
@@ -30,14 +31,14 @@ Having that in mind and following the general idea presented by [Black Hill](htt
 
 
 
-![[csp_violation.webp]](/resources/images/posts/content-security-policy/csp_violation.webp)
+![[csp_violation.webp]](https://r2.caponte.io/resources/images/posts/content-security-policy/csp_violation.webp)
 <figcaption align = "center">Initial CSP violations.</figcaption>
 
 ### 3. Whitelisting External Resources
 
 As expected from the initial policy, **rocket-loader.min.js**, the **Lato Font**, and connections to **Google Analytics** are reported as they are external resources. 
 
-![[external_resources_violation.webp]](/resources/images/posts/content-security-policy/external_resources_violation.webp)
+![[external_resources_violation.webp]](https://r2.caponte.io/resources/images/posts/content-security-policy/external_resources_violation.webp)
 <figcaption align = "center">Violations from external resources.</figcaption>
 
 To handle this violation it is enough to specify the source list with all the sources/hosts that are not to be blocked. In this list we can be as granular as you need, specifying:
@@ -60,7 +61,7 @@ As I have very few resources, my resulting source lists are easy ones:
 ### 4. Allowing Inline Execution
 Going back to the original violations we see that some of them refer the inline execution of internals and external resources. This can be confusing as our policy should only block external resources. Nevertheless, inline execution is not considered a best practice for multiple reasons, security being one of them, and so is blocked by CSP by default.
 
-![[inline_violation.webp]](/resources/images/posts/content-security-policy/inline_violation.webp)
+![[inline_violation.webp]](https://r2.caponte.io/resources/images/posts/content-security-policy/inline_violation.webp)
 <figcaption align = "center">Inline Violations.</figcaption>
 
 When it comes to inline execution the general recommendation is to not have it and instead to move these resources to their own files. I like this idea but it is not always applicable, be it because of performance or refactoring limitations. 
@@ -99,12 +100,12 @@ To set up reporting I had to:
 		"max_age":31536000,
 		"endpoints":[{"url":"https://caponte.report-uri.com/a/d/g"}],"include_subdomains":true}
 
-![[report_to_header.webp]](/resources/images/posts/content-security-policy/report_to_header.webp)
+![[report_to_header.webp]](https://r2.caponte.io/resources/images/posts/content-security-policy/report_to_header.webp)
 <figcaption align = "center">Report-To Header.</figcaption>
 
 To handle these reports I am using [report-uri.com](https://report-uri.com/products/content_security_policy#prices), which's free plan provides all I need to receive 10.000 reports a month and visualize the reports of the last 90 days.
 
-![[csp_reports.webp]](/resources/images/posts/content-security-policy/csp_reports.webp)
+![[csp_reports.webp]](https://r2.caponte.io/resources/images/posts/content-security-policy/csp_reports.webp)
 <figcaption align = "center">Example CSP Reports.</figcaption>
 
 

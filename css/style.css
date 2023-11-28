@@ -64,7 +64,7 @@ html {
 }
 
 body {
-    font-family: 'Lato', serif, Calibri, Arial;
+    font-family: 'Lato', Arial;
     color: #aaa;
     background: #efe9e9;
     font-size: 1em;
@@ -73,7 +73,7 @@ body {
 
 
 .second-font {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', Arial;
 }
 
 .p-none {
@@ -93,7 +93,7 @@ body {
 }
 
 .btn {
-    font-family: 'Lato', sans-serif, Calibri, Arial;
+    font-family: 'Lato', Arial,;
     box-shadow: none;
     border-radius: 0;
     font-weight: 600;
@@ -1957,7 +1957,7 @@ body.blog .pagination li a i {
 
 .widget-tags ul>li a {
     color: #656c6d;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', Arial;
     border: 1px solid #d6d6d6;
     display: block;
     font-size: 13px;

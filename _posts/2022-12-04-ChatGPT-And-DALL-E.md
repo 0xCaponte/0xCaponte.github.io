@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "What image does ChatGPT have of itself? Ft: DALL-E"
-image: /resources/images/posts/ChatGPT-And-DALL-E/cover.webp
+image: /resources/images/og-image.png
+cover: https://r2.caponte.io/resources/images/posts/ChatGPT-And-DALL-E/cover.webp
 description: "I asked ChatGPT to write some descriptions of itself, and then passed those descriptions to DALL-E to see what visual representations would be generated. The results: a healthy amount of self-esteem, classic AI-Robots and a couple of cats."
 author: Carlos Aponte
 date: 2022-12-04 00:00:00
