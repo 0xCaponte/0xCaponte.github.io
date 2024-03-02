@@ -1543,7 +1543,6 @@ body.blog article h4 {
 body.blog article code {
     padding-left: 40px;
     display: inline-block;
-    white-space: normal;
     max-width: 100%;
     overflow-wrap: break-word;
     word-break: break-word;
