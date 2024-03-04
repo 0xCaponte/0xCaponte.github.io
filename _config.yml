@@ -419,6 +419,16 @@ blog:
     corrections, or if you want to say hello.
 
 #################
+#  kramdown rouge syntax highlight
+#################
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+#################
 #  SASS
 #################
 sass:

@@ -6,7 +6,7 @@ cover: https://r2.caponte.io/resources/images/posts/flags/cover.webp
 description: Rendering flag emojis in the browser should be straightforward. However, Windows deliberately omits flag emojis from its default fonts, causing browsers to fallback to two-letter country codes instead. Here's an easy and elegant workaround for this issue.
 author: Carlos Aponte
 date: 2024-01-25 00:00:00
-tags: ["DIY", "Svelte"]
+tags: ["DIY", "SvelteKit"]
 ---
 
 <!-- Flag Emojis in Windows Browsers -->
