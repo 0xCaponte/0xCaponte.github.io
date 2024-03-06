@@ -44,7 +44,7 @@ body {
 }
 
 .btn {
-    font-family: 'Lato', Arial,;
+    font-family: 'Lato', Arial, ;
     box-shadow: none;
     border-radius: 0;
     font-weight: 600;
@@ -496,9 +496,11 @@ body.dark .responsive-video {
     0% {
         -webkit-transform: perspective(120px);
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateY(180deg);
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
     }
@@ -509,10 +511,12 @@ body.dark .responsive-video {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
+
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
     }
+
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -1540,8 +1544,7 @@ body.blog article h4 {
     line-height: 1.25em;
 }
 
-body.blog article code {
-    padding-left: 40px;
+body.blog article {
     display: inline-block;
     max-width: 100%;
     overflow-wrap: break-word;
@@ -1928,21 +1931,26 @@ body.blog .pagination li a i {
 /*================================================== */
 
 @media (max-width:1419px) {
+
     .page-title h1,
     .page-title h2 {
         font-size: 30px;
     }
+
     .bl-main>section.topleft .bl-box .ah-headline span:first-child {
         font-size: 20px;
     }
+
     .bl-main>section.topleft .bl-box .ah-headline.clip .my-name {
         font-size: 35px;
         margin: 20px 0;
     }
+
     .bl-main>section.topleft .bl-box h1 span,
     .bl-main>section.topleft .bl-box h3 span {
         font-size: 25px;
     }
+
     .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
         font-size: 25px;
     }
@@ -1954,21 +1962,26 @@ body.blog .pagination li a i {
         flex: 1 1 0px;
         justify-content: space-evenly;
     }
+
     body.dark .resume-list-item,
     .resume-list-item,
     .resume-list-item:not(.is-active):hover {
         background: initial !important;
     }
+
     .resume-list-item-inner {
         padding-top: 23px !important;
         padding: 20px !important;
     }
+
     .resume-list-item-title-text {
         display: none;
     }
+
     .resume-list-item-title-text {
         display: none;
     }
+
     /* Find Color settings in blue.css */
 }
 
@@ -1983,16 +1996,20 @@ body.blog .pagination li a i {
         width: calc(100% - 24px);
         left: 24px !important;
     }
+
     .bl-main>section:nth-child(4).bl-expand .contact .rightside .submit-form {
         padding-right: 0;
     }
+
     .bl-main>section:nth-child(4).bl-expand .contact .rightside .form-message {
         padding-left: 0;
         margin-top: 15px;
     }
+
     .list-1 {
         margin-bottom: 0;
     }
+
     .list-2 {
         margin-top: 0;
     }
@@ -2002,43 +2019,53 @@ body.blog .pagination li a i {
     .bl-main>section {
         width: calc(100% - 24px);
     }
+
     .bl-main>section.topleft {
         height: auto;
         top: 20%;
     }
+
     .bl-main>section:nth-child(2):not(.bl-expand) {
         left: 0;
         top: calc(49% - 72px);
         height: 17%;
     }
+
     .bl-main>section:nth-child(3):not(.bl-expand) {
         top: calc(66% - 48px);
         height: 17%;
     }
+
     .bl-main>section:nth-child(4):not(.bl-expand) {
         background: #fff;
         top: calc(83% - 24px);
         height: 17%;
         left: 0;
     }
+
     .infos {
         padding-bottom: 35px;
     }
+
     body.dark .bl-main>section:nth-child(4):not(.bl-expand) {
         background: #222;
     }
+
     .personal-info a.btn,
     div.bl-panel-items a.btn {
         display: block;
         width: 100%;
     }
+
     .personal-info a.btn.btn-blog {
         margin-top: 24px;
     }
+
     .resume-cards {
         margin: auto;
         max-width: initial;
     }
+
     .resume-card {
         margin-bottom: 24px;
     }
@@ -2048,46 +2075,58 @@ body.blog .pagination li a i {
     .bl-content>div.container.page-title {
         margin-top: 45px;
     }
+
     .bl-main>section:nth-child(4).bl-expand .contact .rightside {
         margin-top: 50px;
         padding: 0;
     }
+
     .bl-main>section:nth-child(4).bl-expand .contact .leftside {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 24px;
     }
+
     body.blog .container.page-title h1,
     body.blog .container.page-title h2 {
         font-size: 35px;
     }
+
     .section-padding.section-padding-right-none {
         padding-right: 24px !important;
     }
+
     .divider {
         margin: 30px 0 60px;
     }
+
     .infos {
         padding-bottom: 30px;
     }
+
     .col.personal-info {
         margin-top: 15px;
         padding: 0 15px;
     }
+
     .resume-card-body.experience .resume-content h6,
     .resume-card-body.education .resume-content h6 {
         line-height: 22px;
     }
+
     .personal-info a.btn {
         margin-top: 10px;
     }
+
     .personal-info p {
         margin-bottom: 5px;
     }
+
     div.bl-panel-items>div>div {
         top: 0;
         bottom: 0px;
     }
+
     div.bl-panel-items.bl-panel-items-show nav {
         top: -79px;
         background: transparent;
@@ -2096,98 +2135,124 @@ body.blog .pagination li a i {
         height: 66px;
         margin: 0;
     }
+
     div.bl-panel-items nav span.bl-icon-close,
     div.bl-panel-items nav span.bl-next-work,
     div.bl-panel-items nav span.bl-previous-work {
         color: #adadad;
         display: inline-block;
     }
+
     div.bl-panel-items.bl-panel-items-show nav span {
         float: initial;
         margin-top: 9px;
         margin-bottom: 1px;
     }
+
     .bl-content>.row>div {
         padding: 0;
     }
+
     .bl-main>section .bl-icon-close {
         top: 20px;
         right: 20px;
         width: 22px;
     }
+
     div.bl-panel-items.bl-panel-items-show .control-button.bl-icon-close {
         top: 35px;
         right: 35px;
         width: 22px;
     }
+
     #bl-work-items>div {
         margin-bottom: 0;
         padding: 24px 15px 0;
     }
+
     .bl-expand .bl-box {
         height: 130px;
     }
+
     .bl-content>ul li {
         width: 40%;
     }
+
     .resume>div.col {
         padding: 0;
     }
+
     div.bl-panel-items>div>div.row {
         display: block;
         padding: 24px 0;
     }
+
     .bl-main>section:nth-child(2).bl-expand,
     .bl-main>section:nth-child(3).bl-expand,
     .bl-main>section:nth-child(4).bl-expand {
         top: 24px;
     }
+
     div.bl-panel-items>div>div.row>div {
         padding: 0;
     }
+
     .bl-content {
         bottom: 0;
     }
+
     div.bl-panel-items>div>div h3 {
         margin-top: 20px;
     }
+
     .bl-main>section:nth-child(4).bl-expand form>div,
     .bl-main>section:nth-child(4).bl-expand .bl-content>div>div>div.row>div {
         padding: 0;
     }
+
     #bl-work-items {
         margin-top: -22px;
         margin-bottom: 30px;
     }
+
     body.blog article h4 {
         font-size: 20px;
     }
+
     .widget {
         margin-bottom: 15px;
     }
+
     .btn.back {
         border-left: 0;
     }
+
     .btn-padding {
         padding-top: 0 !important;
     }
+
     body.blog .btn.back {
         width: 100%;
         border-left: 0;
         margin-bottom: -6px;
     }
+
     body.blog article {
         margin-bottom: 45px;
     }
+
     .comments-form button {
         margin-bottom: 50px;
     }
+
     .comments-reply {
         margin-left: 70px;
     }
+
     .comments-list .comment-date {
         display: none;
     }
+
     .comments-form form .input-field label {
         width: 85% !important;
     }
@@ -2198,60 +2263,76 @@ body.blog .pagination li a i {
         width: calc(100% - 15px);
         left: 15px !important;
     }
+
     .bl-main>section {
         width: calc(100% - 15px);
     }
+
     .bl-main>section:nth-child(4):not(.bl-expand) {
         top: calc(83% - 15px);
     }
+
     .bl-main>section:nth-child(3):not(.bl-expand) {
         top: calc(66% - 30px);
     }
+
     .bl-main>section:nth-child(2):not(.bl-expand) {
         top: calc(49% - 45px);
     }
+
     .bl-main>section:nth-child(2).bl-expand,
     .bl-main>section:nth-child(3).bl-expand,
     .bl-main>section:nth-child(4).bl-expand {
         top: 15px;
         height: calc(100% - 30px);
     }
+
     .bl-main>section.bl-expand {
         width: calc(100% - 15px);
     }
+
     .section-padding {
         padding: 0 15px !important;
     }
+
     .section-padding.section-padding-right-none {
         padding-right: 15px !important;
     }
+
     #bl-work-items {
         padding: 0;
         margin-bottom: 15px;
         margin-top: -15px;
     }
+
     #bl-work-items>div {
         padding: 15px 15px 0;
     }
+
     div.bl-panel-items>div>div.row {
         padding: 15px 0 67px;
     }
+
     div.bl-panel-items,
     div.bl-panel-items>div {
         height: calc(100% - 15px);
     }
+
     div.bl-panel-items>div {
         top: -15px;
         width: 100%;
     }
+
     .page-title h1,
     .page-title h2 {
         font-size: 24px;
     }
+
     .bl-main>section.bl-expand .page-title h1,
     .bl-main>section.bl-expand .page-title h2 {
         font-size: 35px;
     }
+
     .resume-card-body-container {
         padding: 15px;
     }
@@ -2269,4 +2350,22 @@ body.blog .pagination li a i {
 
 .search-list {
     padding: 5px 0;
+}
+
+body.blog pre code {
+    display: block;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+
+body.blog .video-container {
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+body.blog .responsive-video {
+    width: 100% !important;
+    height: auto !important;
 }

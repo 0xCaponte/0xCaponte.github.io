@@ -34,8 +34,8 @@ Be it that because the examples I found were not made for [SvelteKit](https://ki
 3. Added a transparent layer over the globe and set the drag action to it. This made the entire surface draggable, and not just the globe's paths.
 4. Calculated the new rotation based on the drag coordinates and re-rendered the map. 
 
-<div>
-  <video autoplay loop muted playsinline>
+<div style="max-width: 100%; overflow: hidden;">
+  <video autoplay loop muted playsinline style="width: 100%;">
     <source src="https://r2.caponte.io/resources/videos/posts/globe/globe_rotation.mp4" type="video/mp4">
     Globe Rotation on Drag.
   </video>
