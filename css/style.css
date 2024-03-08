@@ -2360,12 +2360,8 @@ body.blog pre code {
 }
 
 
-body.blog .video-container {
+body.blog .responsive-video {
     max-width: 100% !important;
     overflow: hidden !important;
-}
-
-body.blog .responsive-video {
-    width: 100% !important;
     height: auto !important;
 }

@@ -1,22 +1,24 @@
 ---
 layout: post
-title: "Implementing a Draggable Globe Map With d3"
+title: 'Implementing a Draggable Globe Map With d3'
 image: /resources/images/og-image.png
 cover: https://r2.caponte.io/resources/images/posts/globe/cover.webp
 description: A simple implementation of a draggable globe map for Sveltekit. This mobile-friendly map is build using d3 and can be easily integrated into different JavaScript frameworks.
 author: Carlos Aponte
 date: 2024-03-04 00:00:00
-tags: ["DIY", "SvelteKit", "JS"]
+tags: ['DIY', 'SvelteKit', 'JS']
 ---
 
-## Context and Problem: 
+## Context and Problem:
+
 For the last couple of months I have been working on the Language Map, a small side project of mine in which you can visualize the reach of the languages you speak, both in terms of speakers and countries.
 
-The first version of the [Language Map](https://languagemap.world/) had a flat world map as main element. While this design worked well on larger screens, it was horrible on mobile devices. Thinking of how to transform the UI, a globe seemed like a better fit for the limited screen space; you still have all the countries, just not all at once. 
+The first version of the [Language Map](https://languagemap.world/) had a flat world map as main element. While this design worked well on larger screens, it was horrible on mobile devices. Thinking of how to transform the UI, a globe seemed like a better fit for the limited screen space; you still have all the countries, just not all at once.
 
 Refactoring the existing code to include the mobile view of a globe didn't take more than 30 minutes, 95% of the code was the same, so it was just a matter of moving the common parts to a helper class, and render the maps based on screen size. This was a small victory, but the real challenge came when adding rotation to the globe.
 
-## Basic Solution: 
+## Basic Solution:
+
 The idea is that the projection used for the map can be rotated to a set of coordinates, and that the initial and final point of the dragging action are used to calculate the new set of coordinates.
 
 The most promising way of doing this was integrating the drag library from [d3.js](https://d3js.org/) (the same set of libraries that generates the map), which would handle the movement event and could deliver the difference in the movement coordinates.
@@ -32,15 +34,12 @@ Be it that because the examples I found were not made for [SvelteKit](https://ki
 1. Created the basic globe.
 2. Integrated the drag library and logged the movements to check that it worked.
 3. Added a transparent layer over the globe and set the drag action to it. This made the entire surface draggable, and not just the globe's paths.
-4. Calculated the new rotation based on the drag coordinates and re-rendered the map. 
+4. Calculated the new rotation based on the drag coordinates and re-rendered the map.
 
-<div style="max-width: 100%; overflow: hidden;">
-  <video autoplay loop muted playsinline style="width: 100%;">
+  <video autoplay loop muted playsinline class="responsive-video">
     <source src="https://r2.caponte.io/resources/videos/posts/globe/globe_rotation.mp4" type="video/mp4">
     Globe Rotation on Drag.
   </video>
-</div>
-
 
 As you can see on the video, this worked. What was the problem? What was the difference? I can not tell for sure, I believe it was the way Svelte's reactivity works and how I was updating the values. Other than that, both code before and after use the same basic building blocks and strategies.
 
@@ -110,7 +109,7 @@ Here is a minimum version of the [SvelteKit](https://kit.svelte.dev/) code, as w
 </script>
 
 <svg width="100%" height="100%" viewBox="0 0 960 960" preserveAspectRatio="xMidYMid meet">
-	
+
 	<!-- Globe outline with transparent fill to make it completly draggable -->
 	<path d={path(sphere)} fill="rgba(0,0,0,0)" stroke="#000" class="globe-path" />
 
@@ -121,10 +120,3 @@ Here is a minimum version of the [SvelteKit](https://kit.svelte.dev/) code, as w
 	<path d={path(borders)} fill="none" stroke="#000" />
 </svg>
 ```
-
-
-
-
-
-
-
