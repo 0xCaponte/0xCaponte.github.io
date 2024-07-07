@@ -1,12 +1,15 @@
-<div class="bl-panel-items" id="bl-panel-work-items">
+        <div class="bl-panel-items" id="bl-panel-work-items">
     {%- for portfolio in site.portfolios -%}
     <!-- Project Starts -->
     <div data-panel="panel-{{ forloop.index }}">
         <div class="row">
-
+              
+            <!-- Project Images/Videos Starts -->
             <div class="carousel carousel-slider center">
+              
+                <!-- Carousel Navigation Left -->
+                <a class="movePrevCarousel carousel-arrow carousel-arrow-left"><i class="fa fa-angle-left"></i></a>
 
-                <!-- Project Main Content Starts -->
                 {%- for content in portfolio.content -%}
                 <div class="carousel-item valign-wrapper">
                 
@@ -25,8 +28,13 @@
                 
                 </div> {%- endfor -%}
 
+                <!-- Carousel Navigation Right -->
+                <a class="moveNextCarousel carousel-arrow carousel-arrow-right"><i class="fa fa-angle-right"></i></a>
+
             </div>
-            <!-- Main Project Content Ends -->
+            
+           
+            <!-- Project Images/Videos Ends -->
 
             <!-- Project Details Starts -->
             <div class="col s12 l6 xl6 section-padding">
@@ -56,17 +64,9 @@
 
     <!-- Portfolio Navigation Starts -->
     <nav>
-        <!-- Previous Work Icon Starts -->
-        <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
-        <!-- Previous Work Icon Ends -->
-
         <!-- Close Work Icon Starts -->
         <img alt="close" src="/resources/images/placeholder.webp" data-src="{{ '/resources/images/close-button.webp' | relative_url }}" class="lazyload control-button bl-icon-close" />
         <!-- Close Work Icon Ends -->
-
-        <!-- Next Work Icon Starts -->
-        <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
-        <!-- Previous Work Icon Ends -->
     </nav>
     <!-- Portfolio Navigation Ends -->
 </div>

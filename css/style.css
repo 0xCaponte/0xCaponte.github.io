@@ -1230,47 +1230,59 @@ div.bl-panel-items a.btn {
     font-size: 15px;
 }
 
-.carousel .carousel-item > img {
+.carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.carousel .carousel-item > img,
+.carousel .carousel-item > video {
     cursor: -webkit-grab;
-    border: none;
-    border-radius: 0;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
-}
-
-.carousel {
-    margin-bottom: 50px;
-}
-
-.carousel .indicators {
-    position: absolute;
-    bottom: -30px !important;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 2 !important;
+    border: none;
+    border-radius: 0;
 }
 
 .carousel .indicators .indicator-item {
     background-color: #aadcf3 !important; 
     width: 13px;
     height: 13px;
-    margin: 0px 4px;
+    margin: 24px 4px 16px;
+    border-radius: 50%;
+    z-index: 1000 !important;
 }
 
 .carousel .indicators .indicator-item.active {
     background-color: #03a9f4 !important;
 }
 
+.carousel-arrow { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #03a9f4; 
+    border: none; 
+    padding: 10px 0px; 
+    font-size: 40px; 
+    cursor: pointer; 
+    z-index: 1000 !important;
+} 
 
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+.carousel-arrow-left { 
+    left: 10px; 
+} 
+ 
+.carousel-arrow-right { 
+    right: 10px; 
+} 
 
 .videocontainer,
 .responsive-video {
@@ -2098,6 +2110,14 @@ body.blog .pagination li a i {
     .resume-card {
         margin-bottom: 24px;
     }
+
+    .carousel-arrow-left { 
+        left: 1px; 
+    } 
+     
+    .carousel-arrow-right { 
+        right: 1px; 
+    } 
 }
 
 @media (max-width: 600px) {

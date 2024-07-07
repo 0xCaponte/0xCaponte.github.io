@@ -168,6 +168,9 @@ exclude:
   - gulpfile.js
   - package-lock.json
   - package.json
+  - resources/videos/
+  - resources/images/posts/
+  - resources/images/projects/
 
 #########################################################################################
 ############################ template content/sections ######################################
