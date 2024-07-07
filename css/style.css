@@ -1230,17 +1230,46 @@ div.bl-panel-items a.btn {
     font-size: 15px;
 }
 
-.carousel .carousel-item>img {
+.carousel .carousel-item > img {
     cursor: -webkit-grab;
     border: none;
     border-radius: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel {
+    margin-bottom: 50px;
+}
+
+.carousel .indicators {
+    position: absolute;
+    bottom: -30px !important;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2 !important;
 }
 
 .carousel .indicators .indicator-item {
-    background-color: #fff;
+    background-color: #aadcf3 !important; 
     width: 13px;
     height: 13px;
-    margin: 24px 4px 16px;
+    margin: 0px 4px;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #03a9f4 !important;
+}
+
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .videocontainer,

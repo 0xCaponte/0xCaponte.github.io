@@ -303,6 +303,25 @@ portfolio:
 #   - Image sizes for mobile apps --> 
 portfolios:
 
+  - title: Language Map
+    technologies: SvelteKit, Cloudflare Pages
+    client: Own Side Project
+    date: 2023 - 2024
+    preview-image: https://r2.caponte.io/resources/images/projects/languagemap/preview.webp
+    more-info-url: https://languagemap.world/
+    mini-description: Explore Where Your Languages Connect You! 
+    description: >-
+      A small web app hosted entirely on Cloudflare Pages, and made to test the development process with SvelteKit. 
+      This project aimed to answer two questions I've had for a while: In which countries could I communicate with ease? 
+      How many people could I interact with?
+    content:
+      - type: "video"
+        source: https://r2.caponte.io/resources/videos/projects/languagemap/lm.mp4
+      - type: "image"
+        source: https://r2.caponte.io/resources/images/projects/languagemap/lm-1.webp
+      - type: "image"
+        source: https://r2.caponte.io/resources/images/projects/languagemap/lm-2.webp
+
   - title: Pago Móvil (p2p)
     technologies: iOS, Swift, Objective-C, X-Code, OpenSSL
     client: IT Security Solutions C.A.
@@ -317,7 +336,6 @@ portfolios:
     content:
       - type: "video"
         source: https://r2.caponte.io/resources/videos/projects/pagomovil/p2p.mp4
-
 
   - title: Okappi
     technologies: iOS, Swift, AWS Lambda, AWS API Gateway, AWS DynamoDB
