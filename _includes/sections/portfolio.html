@@ -7,8 +7,13 @@
             <!-- Project Images/Videos Starts -->
             <div class="carousel carousel-slider center">
               
+                {%- assign content_count = portfolio.content | size -%}
+                
                 <!-- Carousel Navigation Left -->
+                {%- if content_count > 1 -%}
                 <a class="movePrevCarousel carousel-arrow carousel-arrow-left"><i class="fa fa-angle-left"></i></a>
+                {%- endif -%}
+
 
                 {%- for content in portfolio.content -%}
                 <div class="carousel-item valign-wrapper">
@@ -29,8 +34,9 @@
                 </div> {%- endfor -%}
 
                 <!-- Carousel Navigation Right -->
+                {%- if content_count > 1 -%}
                 <a class="moveNextCarousel carousel-arrow carousel-arrow-right"><i class="fa fa-angle-right"></i></a>
-
+                {%- endif -%}
             </div>
             
            

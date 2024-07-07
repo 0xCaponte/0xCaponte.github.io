@@ -34,18 +34,14 @@
             return false;
         });
 
-
         // RESUME CARDS ANIMATION
         $(".resume-list-item, .resume-card").on("click", function() {
-
             var selected = parseInt($(this).data("index"), 10);
             $(".resume-list-item").removeClass("is-active");
             $("#resume-list-item-" + selected).addClass("is-active");
-
             $(".resume-card").removeClass("is-active");
             $("#resume-card-" + selected).addClass("is-active");
         });
-
 
         // ----------------------- Carousel Arrows - Start -------------------------
 
@@ -55,27 +51,62 @@
             indicators: true,
         });
 
-        // move next carousel
+        // Ensure the active item is centered on initialization
+        centerActiveItem();
+
+        // Move next carousel
         $('.moveNextCarousel').click(function(e) {
             e.preventDefault();
             e.stopPropagation();
             $('.carousel').carousel('next');
+            setTimeout(centerActiveItem, 500); // Allow time for carousel to slide
         });
 
-        // move prev carousel
+        // Move prev carousel
         $('.movePrevCarousel').click(function(e) {
             e.preventDefault();
             e.stopPropagation();
             $('.carousel').carousel('prev');
+            setTimeout(centerActiveItem, 500); // Allow time for carousel to slide
         });
+
+        // Ensure the active item is centered on window resize
+        $(window).resize(function() {
+            centerActiveItem();
+        });
+
+        // Center the active item
+        function centerActiveItem() {
+            var $activeItem = $('.carousel .carousel-item.active');
+            if ($activeItem.length) {
+                var carouselWidth = $('.carousel.carousel-slider').width();
+                var itemWidth = $activeItem.width();
+                var offset = (carouselWidth - itemWidth) / 2;
+                $activeItem.css('transform', 'translateX(' + offset + 'px)');
+            }
+        }
+
+        function centerActiveItem() {
+            var $activeItem = $('.carousel .carousel-item.active');
+            if ($activeItem.length) {
+                var carouselWidth = $('.carousel.carousel-slider').width();
+                var itemWidth = $activeItem.width();
+                var horizontalPadding = 20; // Horizontal padding
+                var offset = (carouselWidth - itemWidth - 2 * horizontalPadding) / 2;
+                $activeItem.css('transform', 'translateX(' + offset + 'px)');
+                $activeItem.css('padding-left', horizontalPadding + 'px');
+                $activeItem.css('padding-right', horizontalPadding + 'px');
+            }
+        }
+
         // -----------------------  Carousel Arrows - End -------------------------
 
-        //skills-counter
+        // Skills counter
         $("#skills-counter [data-star]").each(function(e) {
             var intValue = parseInt($(this).attr("data-star"));
             var floatValue = parseFloat($(this).attr("data-star"));
 
-            // make full with half star
+            // Make full with half star
             var makeFull = function(intValue, floatValue) {
                 var html = "";
                 for (let index = 1; index < intValue + 1; index++) {
@@ -87,7 +118,7 @@
                 }
                 return html;
             };
-            var makeEmtry = function(intValue, floatValue) {
+            var makeEmpty = function(intValue, floatValue) {
                 var html = "";
                 for (let index = floatValue; index < 5; index++) {
                     html += '<i class="fa fa-star-o"></i>\n';
@@ -96,7 +127,7 @@
             };
 
             var html = makeFull(intValue, floatValue);
-            html += makeEmtry(intValue, floatValue);
+            html += makeEmpty(intValue, floatValue);
 
             $(this).html(html);
         });

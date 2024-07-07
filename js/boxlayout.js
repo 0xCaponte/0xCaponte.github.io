@@ -1,13 +1,3 @@
-/**
- * boxlayout.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 var Boxlayout = (function() {
 
     var $el = $('#bl-main'),
@@ -70,10 +60,12 @@ var Boxlayout = (function() {
                 }
 
                 $el.removeClass('bl-expand-item');
+                pauseAllVideos();
 
                 return false;
 
             });
+
             $(document).keyup(function(e) {
 
                 if (!$("#bl-work-section").hasClass("bl-scale-down")) {
@@ -89,6 +81,7 @@ var Boxlayout = (function() {
                         }
 
                         $el.removeClass('bl-expand-item');
+                        pauseAllVideos();
 
                         return false;
 
@@ -96,7 +89,6 @@ var Boxlayout = (function() {
                 }
 
             });
-
 
         });
 
@@ -141,19 +133,12 @@ var Boxlayout = (function() {
             }
 
             $nextPanel.addClass('bl-show-work');
-
-            var video = document.getElementById("video");
-            if (video.paused !== true && video.ended !== true) {
-                video.pause();
-            }
-
-            if (typeof $('.youtube-video')[0] !== 'undefined') {
-                $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-            }
+            pauseCurrentVideo();
 
             return false;
 
         });
+
         $(document).keyup(function(e) {
             if ($("#bl-work-section").hasClass("bl-scale-down")) {
                 if (e.keyCode == 39) {
@@ -178,15 +163,7 @@ var Boxlayout = (function() {
                     }
 
                     $nextPanel.addClass('bl-show-work');
-
-                    var video = document.getElementById("video");
-                    if (video.paused !== true && video.ended !== true) {
-                        video.pause();
-                    }
-
-                    if (typeof $('.youtube-video')[0] !== 'undefined') {
-                        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-                    }
+                    pauseCurrentVideo();
 
                     return false;
                 }
@@ -213,15 +190,7 @@ var Boxlayout = (function() {
                     }
 
                     $nextPanel.addClass('bl-show-work');
-
-                    var video = document.getElementById("video");
-                    if (video.paused !== true && video.ended !== true) {
-                        video.pause();
-                    }
-
-                    if (typeof $('.youtube-video')[0] !== 'undefined') {
-                        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-                    }
+                    pauseCurrentVideo();
 
                     return false;
                 }
@@ -231,23 +200,13 @@ var Boxlayout = (function() {
                         $sectionWork.removeClass('bl-scale-down');
                         $workPanelsContainer.removeClass('bl-panel-items-show');
                         $workPanels.eq(currentWorkPanel).removeClass('bl-show-work');
-
-                        var video = document.getElementById("video");
-                        if (video.paused !== true && video.ended !== true) {
-                            video.pause();
-                        }
-
-                        if (typeof $('.youtube-video')[0] !== 'undefined') {
-                            $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-                        }
+                        pauseAllVideos();
                         return false;
                     }
                 }
-
             }
-
-
         });
+
         // navigating the work items: current work panel scales down and the previous work panel slides up
         $previousWorkItem.on('click', function(event) {
 
@@ -272,15 +231,7 @@ var Boxlayout = (function() {
             }
 
             $nextPanel.addClass('bl-show-work');
-            var video = document.getElementById("video");
-
-            if (video.paused !== true && video.ended !== true) {
-                video.pause();
-            }
-
-            if (typeof $('.youtube-video')[0] !== 'undefined') {
-                $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-            }
+            pauseCurrentVideo();
 
             return false;
 
@@ -293,21 +244,33 @@ var Boxlayout = (function() {
             $sectionWork.removeClass('bl-scale-down');
             $workPanelsContainer.removeClass('bl-panel-items-show');
             $workPanels.eq(currentWorkPanel).removeClass('bl-show-work');
-
-            var video = document.getElementById("video");
-
-            if (video.paused !== true && video.ended !== true) {
-                video.pause();
-            }
-
-            if (typeof $('.youtube-video')[0] !== 'undefined') {
-                $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-            }
+            pauseAllVideos();
 
             return false;
 
         });
 
+    }
+
+    // Pause all videos function
+    function pauseAllVideos() {
+        $('video').each(function() {
+            this.pause();
+        });
+        $('.youtube-video').each(function() {
+            this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        });
+    }
+
+    // Pause current video function
+    function pauseCurrentVideo() {
+        var video = document.getElementById("video");
+        if (video && video.paused !== true && video.ended !== true) {
+            video.pause();
+        }
+        if (typeof $('.youtube-video')[0] !== 'undefined') {
+            $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
     }
 
     return {
