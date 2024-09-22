@@ -52,6 +52,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-lazy-load-image
   - jekyll-purgecss
+  - jekyll-target-blank
 
 # Conversion
 markdown:    kramdown
@@ -62,7 +63,11 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
-  
+
+# Target Blank
+target-blank:
+  exclude: ["caponte.io"]
+
 # Feed
 feed:
   excerpt_only: true

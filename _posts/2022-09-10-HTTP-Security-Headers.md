@@ -48,7 +48,7 @@ Here, there are two actions to be taken:
 
 Two comments about these two last points in the HSTS settings:
 
-- Preloading is risky because taking the website off the preload list can take a long time. However, as my website implements HTTPS from the get-go and this is unlikely to change in the future, I decided to activate this option and added my website to [Google’s preloading list]([https://hstspreload.org).
+- Preloading is risky because taking the website off the preload list can take a long time. However, as my website implements HTTPS from the get-go and this is unlikely to change in the future, I decided to activate this option and added my website to [Google’s preloading list](https://hstspreload.org).
 
 - By setting **X-Content-Type-Options: No-Sniff** we help prevent security concerns related to MIME-Sniffing. In other words, by instructing the user agent to trust the MIME type that we say the resource has, and not try to guess what they are.
 
@@ -65,7 +65,7 @@ As we can see, with these two HTTPS changes retesting of the website already gav
 
 ### 2 - Transform Rules For The Security Headers
 
-Following the ideas from [Cloudflare]([https://blog.cloudflare.com/transform-http-response-headers) and [Paramdeo Singh](https://paramdeo.com/blog/enforcing-security-headers-with-cloudflare-transform-rules), I used Transform Rules to change the HTTP response headers of my website.
+Following the ideas from [Cloudflare](https://blog.cloudflare.com/transform-http-response-headers) and [Paramdeo Singh](https://paramdeo.com/blog/enforcing-security-headers-with-cloudflare-transform-rules), I used Transform Rules to change the HTTP response headers of my website.
 
 In Cloudflare, go to:
 
@@ -140,7 +140,7 @@ While in theory there is the "A+" grade, "A" is a pretty good one too, as even t
 
 **- Workers Instead of Transform Rules**
 
-Both [Cloudflare](https://developers.cloudflare.com/workers/examples/security-headers) and [Black Hills]([https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers) talk about using workers to set the security headers. I looked into this as a more programming-oriented solution but as the worker needs to run with each request, this translates into potential extra costs.
+Both [Cloudflare](https://developers.cloudflare.com/workers/examples/security-headers) and [Black Hills](https://www.blackhillsinfosec.com/fixing-content-security-policies-with-cloudflare-workers) talk about using workers to set the security headers. I looked into this as a more programming-oriented solution but as the worker needs to run with each request, this translates into potential extra costs.
 
 **- Cloudflare's Managed Transform Rule for Security Headers**
 
