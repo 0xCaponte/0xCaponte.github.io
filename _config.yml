@@ -218,7 +218,7 @@ about:
       icon: fa fa-stack-overflow
       link: https://stackoverflow.com/users/1270603
 
-    - description: "Twitter"
+    - description: "𝕏 - Twitter"
       icon: fa fa-twitter
       link: https://twitter.com/0xCaponte
       
@@ -443,6 +443,10 @@ blog:
     I write about what I learn, the side projects that I am working on or about 
     the ones that I decided to let go. Feel free to reach out if you have any comments, 
     corrections, or if you want to say hello.
+
+# Schedule a call
+schedule-call:
+  url: https://calendly.com/carlos-caponte/30min
 
 #################
 #  kramdown rouge syntax highlight

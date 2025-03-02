@@ -145,6 +145,10 @@ body {
     width: calc(33.3333333333% - 48px);
 }
 
+.profile-button-container {
+    margin-bottom: 5%;  /* Relative spacing from bottom */
+}
+
 .justified {
     /* Justify with Flexbox */
     display: flex;
@@ -800,6 +804,9 @@ section.bl-expand .bl-icon-close {
     margin-top: 15px;
 }
 
+.appointment-button {
+   
+}
 
 /*** Resume Panels ***/
 
