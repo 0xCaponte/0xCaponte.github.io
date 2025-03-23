@@ -27,7 +27,7 @@ Start by exploring your field of interest. Check what kind of work is done, the 
 
 #### Research the Roles
 
-If you have a specific role in mind, reverse-engineer it. Look at job descriptions and roadmaps to understand the expected skills and technologies. Work backward to plan what you need to learn and how to do it.
+If you have a specific role in mind, reverse-engineer it. Look at job descriptions and [roadmaps](https://roadmap.sh/) to understand the expected skills and technologies. Work backward to plan what you need to learn and how to do it.
 
 #### Research the Company
 
@@ -67,7 +67,7 @@ Referrals can help you skip the initial screenings. The challenge is getting the
 - **Apply even if you don’t meet all requirements.** If you cover 50% of the job description, apply. Many descriptions are more of a wish-list than must-haves.
 - **Work on open-source projects.** This gives you access to peer reviews with a very high technical level, which can improve your skill. Also, looks very good in your CV.
 - **Use the [Feynman technique.](https://fs.blog/feynman-technique/)** Simplify complex concepts to deepen understanding and improve your capacity to explain them clearly.
-- **Acquire relevant skills.** When transitioning to a new field, focus on acquiring necessary skills and following a road map for your desired role. 
+- **Acquire relevant skills.** When transitioning to a new field, focus on acquiring necessary skills and following a [roadmap](https://roadmap.sh/) for your desired role. 
 
 -----------------
 
