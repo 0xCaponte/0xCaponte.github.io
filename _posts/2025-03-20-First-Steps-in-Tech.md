@@ -9,7 +9,7 @@ date: 2025-03-20 00:00:00
 tags: ["Career", "Advice", "X"]
 ---
 
-Last month, we hosted an "Ask Us Anything" space for JRs and newcomers in the Software Engineering Community on X. The idea was to address some of the recurring questions entry-level people have, especially about the interview process, CV preparation, and standing out in the current market.
+Last month, we hosted an "Ask Us Anything" space for juniors and newcomers in the Software Engineering Community on X. The idea was to address some of the recurring questions entry-level people have, especially about the interview process, CV preparation, and standing out in the current market.
 
 I was lucky to have the support of [Robin Hallabro-Kokko](https://x.com/hallabrokokko), who has been involved in backend development with PHP and Golang for fifteen years, and [Tim Majerus](https://x.com/TheTimMajerus), a lifelong software developer who recently started his own consulting firm.
 
@@ -31,7 +31,7 @@ If you have a specific role in mind, reverse-engineer it. Look at job descriptio
 
 #### Research the Company
 
-Before an interview, understand the company's products, services, and technologies. This will help you anticipate questions and show your genuine interest. Also, reach out to current or former employees to learn about the work environment and practices. Be sincere, it’s clear you want something, so make it a meaningful connection.
+Before an interview, understand the company's products, services, and technologies. This will help you anticipate questions and demonstrate your genuine interest. Also, reach out to current or former employees to learn about the work environment and practices. You can check Reddit, Glassdoor, or contact them directly. But remember to be sincere, it's clear you want something, so make it a meaningful connection.
 
 ## Resume Preparation
 
@@ -39,19 +39,19 @@ Your CV is your main way to stand out, so it needs to be attractive and relevant
 
 Other general advice:
 
-- **Don't lie.** If you get caught, you're done with that company or recruiter.
+- **Don't lie.** Show your proudest achievements but dont take credit that isnt your or claim knowledge you dont have. If you get caught, you are done with that company or recruiter.
 - **Limit buzzwords.** Use them sparingly and only where they make sense.
 - **Keep skills current.** Remove outdated ones to avoid questions you can't answer anymore.
 - **Address employment gaps and job-hopping.** Fill gaps with related activities or be ready to explain them.
-- **Freelancers and contractors** should highlight the variety of projects and clients they’ve worked with.
-- **Provide context for your work.** Use metrics, show how much money or time was saved, number of users, growth, etc. Emphasize accomplishments that benefited the organization.
-- **Avoid fancy templates.** Use ATS-friendly formats to ensure your CV is properly parsed, and you are not discarded during step 0.
-- **Get feedback.** Have someone review your CV for clarity and effectiveness.
-- **For those with little experience,** projects will make up most of your CV. Build relevant, non-basic ones using standard industry tools. Document key decisions on a blog, GitHub, or X, explain your choices, implications, and thought process.
+- **Highlight key clients.** If you are a freelancer or contractor showcase the variety of projects and clients you have worked with.
+- **Provide context for your work.** Use metrics, show how much money or time was saved, number of users, growth, etc. Emphasize individual contributions and accomplishments that benefited the organization.
+- **Avoid fancy CV templates.** Many companies start by doing an automated screening process using Applicant Tracking Systems (ATS), scanning for specific keywords and skills. So better use ATS-friendly formats to ensure your CV is properly parsed and you are not discarded during step 0.
+- **Get feedback.** Have someone review your CV for clarity and effectiveness. Ideally, someone who has hiring experience in the area. Some recruiters who respond might be open to sharing insights.
+- **Those with little experience.** Projects will make up most of your CV. Build relevant, non-basic ones using standard industry tools. Document key decisions on a blog, GitHub, or X, explain your choices, implications, and thought process.
 
 ### Getting Interview Practice
 
-Interview practice is often overlooked but is actually a game-changer. Even experiences people can mess up due to being nervous or not having interviewed in a long time. Getting comfortable with the process improves performance and negotiation skills, so apply, even just for practice.
+Interview practice is often overlooked but is actually a game-changer. Even experienced people can mess up due to being nervous or not having interviewed in a long time. Getting comfortable with the process improves performance and negotiation skills, so apply, even just for practice. Also, get comfortable with sharing your ideas, thought process, and asking questions. Don’t wait for the interviewer to bring it up, take the initiative and do it on your own.
 
 Some will say that taking interviews you won’t accept wastes the other side's time, but companies waste candidates' time all the time. So I say, be selfish, focus on yourself. You can always decline an offer later while keeping the door open, or even accept it. Who knows?
 
@@ -66,7 +66,7 @@ Referrals can help you skip the initial screenings. The challenge is getting the
 - **Stay marketable.** Every now and then check your standing in the market. Look around to see what skills the market is looking for and stay current.
 - **Apply even if you don’t meet all requirements.** If you cover 50% of the job description, apply. Many descriptions are more of a wish-list than must-haves.
 - **Work on open-source projects.** This gives you access to peer reviews with a very high technical level, which can improve your skill. Also, looks very good in your CV.
-- **Use the Feynman technique.** Simplify complex concepts to deepen understanding and improve your capacity to explain them clearly.
+- **Use the [Feynman technique.](https://fs.blog/feynman-technique/)** Simplify complex concepts to deepen understanding and improve your capacity to explain them clearly.
 - **Acquire relevant skills.** When transitioning to a new field, focus on acquiring necessary skills and following a road map for your desired role. 
 
 -----------------
