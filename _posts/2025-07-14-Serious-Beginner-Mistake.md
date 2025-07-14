@@ -5,7 +5,7 @@ image: /resources/images/og-image.png
 cover: https://r2.caponte.io/resources/images/posts/serious-beginner-mistake/cover.webp
 description:  New developers tend to overcomplicate things, they want to be clever and elegant without realizing the long-term implications. Simple and clear solutions are better in the long run, even if they seem basic.
 author: Carlos Aponte
-date: 2025-07-15 00:00:00
+date: 2025-07-14 00:00:00
 tags: ["Beginner", "Coding", "Advice", "Opinions"]
 ---
 
