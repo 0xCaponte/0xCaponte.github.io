@@ -1,6 +1,6 @@
---- 
-layout: default 
-pageClass: blog 
+---
+layout: default
+pageClass: blog
 ---
 
 <link rel="stylesheet" href="{{ 'css/syntax_monokai.css' | relative_url }}" />
@@ -40,9 +40,17 @@ pageClass: blog
                     <!-- Meta Starts -->
                     <div class="meta second-font">
                         <span><i class="fa fa-user"></i> {{ page.author }} </span>
-                        <span class="date"><i class="fa fa-calendar"></i> {{page.date | date_to_string}}</span>
+                        <span class="date"><i class="fa fa-calendar"></i>
+                            {% assign mod_date = page.last_modified_at | date: "%Y-%m-%d" %}
+                            {% assign orig_date = page.date | date: "%Y-%m-%d" %}
+                            {% if mod_date != orig_date %}
+                            {{ page.last_modified_at | date_to_string }} (Original: {{ page.date | date_to_string }})
+                            {% else %}
+                            {{ page.date | date_to_string }}
+                            {% endif %}
+                        </span>
                         <span><i class="fa fa-tags"></i>
-                            {{  page.tags | join: ', ' }}
+                            {{ page.tags | join: ', ' }}
                         </span>
                     </div>
                     <!-- Meta Ends -->
