@@ -15,9 +15,7 @@ This is how I learned that no matter how elegant and great your solutions are, t
 
 ## Three Core Principles for Clear Communication
 
-If you are taking only one thing from this post, this should be it. 
-
-Over time, I've learned to focus on three things to guide most of my interactions, whether a chat message, a meeting, or a code review.
+Over time, I've learned to focus on three things to guide most of my interactions, whether a chat message, a meeting, or a code review (*If you are taking only one thing from this post, this should be it*)
 
 1. **Speak Their Language:** Before you write or speak, consider who you are speaking to and what they care about. Frame your message so it resonates with them.
     
