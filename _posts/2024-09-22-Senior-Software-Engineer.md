@@ -6,6 +6,7 @@ cover: https://r2.caponte.io/resources/images/posts/senior/cover.webp
 description: The timeframe and roadmap to becoming a senior software engineer is a common question. After consulting the SWE community on X (formerly Twitter) and discussing it with some experienced friends, I summarize what it really takes to reach this level and be good at it.
 author: Carlos Aponte
 date: 2024-09-22 00:00:00
+last_modified_at: 2025-09-28 00:00:00
 tags: ['Career', 'Advice']
 ---
 
@@ -42,8 +43,7 @@ This is a key element that some people just decide to ignore believing that thei
 
 Both orally and written is fundamental. At this level you are a source of knowledge and a part of the planning process, so you need to convey your points clearly to both technical and non-technical people. You might be working with colleagues that do not understand how some peace of code and need your help. But also, you might be meeting the management team to discuss upcoming features and schedules. These are two very different conversations that need different approaches.
 
-
-Here I want to make two concrete suggestions:
+[I have a whole post about this](https://caponte.io/2025/09/28/Communication/), but here I want to make two concrete suggestions:
 
 1. When writing, answer all the questions in advance. For this, read what you wrote, reflect, realize what points might create clear follow-up questions and address them.  For example:
  
