@@ -1,0 +1,64 @@
+/* 
+ * Blog image sizing fix
+ * This CSS ensures that blog post images are properly sized and maintain their aspect ratio
+ * while fitting within the required container dimensions.
+ */
+
+/* Blog page styles */
+body.blog .blog-figure {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+body.blog .blog-figure a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+body.blog .blog-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.3s ease;
+}
+
+/* Main page blog section styles */
+.bl-main .blog-figure {
+    background-color: transparent;
+    position: relative;
+    width: 100%; 
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+}
+
+.bl-main .blog-figure a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bl-main .blog-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Optional hover effect */
+.blog-figure:hover img {
+    transform: scale(1.05);
+}
