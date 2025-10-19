@@ -24,7 +24,7 @@
                     </div>
                     
                     {%- elsif content.type == 'video' -%}
-                    <video id="video" class="responsive-video" controls="" poster="{{ content.image | relative_url }}">
+                    <video id="video" class="responsive-video" controls="" preload="none" poster="{{ content.image | relative_url }}">
                         <source src="{{ content.source }}" type="video/mp4">
                     </video>
                 

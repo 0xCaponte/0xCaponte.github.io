@@ -2421,3 +2421,10 @@ body.blog .responsive-video {
     overflow: hidden !important;
     height: auto !important;
 }
+
+video.responsive-video,
+.carousel .carousel-item > img.responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
