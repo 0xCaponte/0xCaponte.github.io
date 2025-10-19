@@ -16,8 +16,7 @@ const jsFiles = [
     'js/jquery.hoverdir.js',
     'js/simple-jekyll-search.min.js',
     'js/custom.js',
-    'js/materialize.min.js',
-    'js/lazysizes.min.js'
+    'js/materialize.min.js'
 ];
 
 const cssFiles = [
