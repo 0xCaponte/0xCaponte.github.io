@@ -1,0 +1,65 @@
+/*
+ * Blog section alignment fixes
+ * This CSS ensures that blog post elements are properly aligned in the sections/blog.html
+ */
+
+/* Blog article container alignment */
+.bl-main article {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Blog figure/image alignment */
+.bl-main .blog-figure {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Blog title alignment */
+.bl-main article .blog-title {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 110%;
+    color: inherit;
+}
+
+/* h5 blog titles with same styling as h6 */
+.bl-main article h5.blog-title {
+    font-size: 1.15rem;
+    line-height: 110%;
+    margin: 15px 0 10px;
+    font-weight: 600;
+}
+
+/* Ensure blog title color is maintained in light and dark themes */
+body.dark .bl-main article h5.blog-title {
+    color: #fff;
+}
+
+/* Blog description alignment */
+.bl-main .blog-excerpt p {
+    text-align: left;
+    margin: 10px auto;
+}
+
+/* Blog meta information (author, date, tags) alignment */
+.bl-main .blog-excerpt .meta {
+    text-align: center;
+    width: 100%;
+    margin: 8px auto;
+}
+
+/* Ensure consistent spacing between blog preview items */
+.bl-main .da-thumbs > div {
+    padding: 10px;
+}
+
+/* Add consistent padding to the blog excerpt */
+.bl-main .blog-excerpt {
+    padding: 5px 10px 15px;
+}
