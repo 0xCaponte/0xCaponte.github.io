@@ -19,6 +19,7 @@
     "@babel/core": "^7.22.10",
     "postcss": "^8.4.27",
     "purgecss": "^5.0.0",
+    "sass": "^1.93.2",
     "simple-jekyll-search": "^1.10.0"
   },
   "devDependencies": {
