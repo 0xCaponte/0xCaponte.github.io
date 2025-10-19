@@ -40,7 +40,7 @@ function processJs() {
         .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('_site/js'))
+        .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 }
 
@@ -50,7 +50,7 @@ function processCss() {
         .pipe(concat('style.min.css'))
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('_site/css'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 }
 
@@ -93,3 +93,5 @@ const build = gulp.series(jekyllBuild, gulp.parallel(processJs, processCss, proc
 
 exports.default = gulp.series(build, gulp.parallel(browserSyncServe, watch));
 exports.build = build;
+exports.processJs = processJs;
+exports.processCss = processCss;

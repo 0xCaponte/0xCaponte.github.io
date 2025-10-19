@@ -4,4 +4,4 @@ _site/
 .jekyll-metadata
 node_modules/
 *.Ide
-*Zone.Identifier
+*Zone.Identifier\n# Generated asset files\n/js/app.min.js\n/css/style.min.css
