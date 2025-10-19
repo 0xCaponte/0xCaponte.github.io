@@ -2421,3 +2421,8 @@ body.blog .responsive-video {
     overflow: hidden !important;
     height: auto !important;
 }
+
+video.responsive-video {
+    width: 100%;
+    height: auto;
+}
